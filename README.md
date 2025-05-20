@@ -27,7 +27,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[A survey on 3d gaussian splatting](https://arxiv.org/abs/2401.03890)                                                                              | arXiv2024 | | Survey |
 |[3d gaussian as a new vision era: A survey](https://ui.adsabs.harvard.edu/abs/2024arXiv240207181F/abstract)                                        | arXiv2024 | | Survey |
 |[Semantically-aware neural radiance fields for visual scene understanding: A comprehensive review](https://arxiv.org/abs/2402.11141)               | arXiv2024 | | Survey |
-|[Neural Radiance Field in Autonomous Driving: A Survey](https://arxiv.org/abs/2404.13816)                                                          | arXiv2024 | | Survey |
+|[Neural Radiance Field in Urban: A Survey](https://arxiv.org/abs/2404.13816)                                                          | arXiv2024 | | Survey |
 |[How nerfs and 3d gaussian splatting are reshaping slam: A survey](https://fabiotosi92.github.io/files/survey-slam.pdf)                            | arXiv2024 | | Survey |
 |[NeRF in robotics: A survey](https://arxiv.org/abs/2405.01333)                                                                                     | arXiv2024 | | Survey |
 |[Neural Fields in Robotics: A Survey](https://arxiv.org/abs/2410.20220)                                                                            | arXiv2024 | | Survey |
@@ -51,14 +51,22 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 ### perprint
 | **Paper**                                                                                                             | **Conference/Journal** |**Code**    |**Type**    |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------|------------|------------|
-
+|[Prosgnerf: Progressive dynamic neural scene graph with frequency modulated auto-encoder in urban scenes](https://arxiv.org/abs/2312.09076)     |Arxiv 2023| |Urban       |
 
 ### Paper
 | **Paper**                                                                                                             | **Conference/Journal** |**Code**    |**Type**    |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------|------------|------------|
-
-
-
+|[Street gaussians: Modeling dynamic urban scenes with gaussian splatting](https://arxiv.org/abs/2401.01339)                                                  |ECCV 2024   |[Code](https://github.com/zju3dv/street_gaussians)                                                                                                            |Urban       |
+|[Neural scene graphs for dynamic scenes ](http://openaccess.thecvf.com/content/CVPR2021/html/Ost_Neural_Scene_Graphs_for_Dynamic_Scenes_CVPR_2021_paper.html)                                                                                                                                                         |CVPR 2021   |[Code](https://github.com/princeton-computational-imaging/neural-scene-graphs)                                                                                |Urban       |
+|[Multi-level neural scene graphs for dynamic urban environments](http://openaccess.thecvf.com/content/CVPR2024/html/Fischer_Multi-Level_Neural_Scene_Graphs_for_Dynamic_Urban_Environments_CVPR_2024_paper.html)                                                                  |CVPR 2024   |[Code](https://github.com/tobiasfshr/map4d)                                                                                                                   |Urban       |
+|[3d geometry-aware deformable gaussian splatting for dynamic view synthesis](http://openaccess.thecvf.com/content/CVPR2024/html/Lu_3D_Geometry-Aware_Deformable_Gaussian_Splatting_for_Dynamic_View_Synthesis_CVPR_2024_paper.html)                                                           |CVPR 2024   |[Code](https://github.com/zhichengLuxx/GaGS)                                                                                                                  |Urban       |
+|[Star: Selfsupervised tracking and reconstruction of rigid objects in motion with neural rendering](http://openaccess.thecvf.com/content/CVPR2021/html/Yuan_STaR_Self-Supervised_Tracking_and_Reconstruction_of_Rigid_Objects_in_Motion_CVPR_2021_paper.html)                                                   |CVPR 2021||Indoor|
+|[Panoptic neural fields: A semantic object-aware neural scene representation](http://openaccess.thecvf.com/content/CVPR2022/html/Kundu_Panoptic_Neural_Fields_A_Semantic_Object-Aware_Neural_Scene_Representation_CVPR_2022_paper.html)                                                    |CVPR 2022||Urban|
+|[Hugs: Holistic urban 3d scene understanding via gaussian splatting](http://openaccess.thecvf.com/content/CVPR2024/html/Zhou_HUGS_Holistic_Urban_3D_Scene_Understanding_via_Gaussian_Splatting_CVPR_2024_paper.html)                     |CVPR 2024|[Code](https://github.com/hyzhou404/HUGS)|Urban|
+|[S-nerf: Neural radiance fields for street views](https://openreview.net/forum?id=gx2yJS-ENqI)                |ICLR 2023|[Code](https://github.com/fudan-zvg/S-NeRF)|Urban|
+|[Drivinggaussian: Composite gaussian splatting for surrounding dynamic autonomous driving scenes](http://openaccess.thecvf.com/content/CVPR2024/html/Zhou_DrivingGaussian_Composite_Gaussian_Splatting_for_Surrounding_Dynamic_Autonomous_Driving_Scenes_CVPR_2024_paper.html)                                        |CVPR 2024|[Code](https://github.com/VDIGPKU/DrivingGaussian)                                                                                                             |Urban      |
+|[Unisim: A neural closedloop sensor simulator](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_UniSim_A_Neural_Closed-Loop_Sensor_Simulator_CVPR_2023_paper.html)|CVPR 2023| [Project Site](https://waabi.ai/unisim/)|Urban|
+|[Neurad: Neural rendering for autonomous driving](http://openaccess.thecvf.com/content/CVPR2024/html/Tonderski_NeuRAD_Neural_Rendering_for_Autonomous_Driving_CVPR_2024_paper.html)                          |CVPR 2024|[Code](https://github.com/georghess/neurad-studio)|Urban|
 
 # Reconstruction with Articulated Motion
 ## Human Body
