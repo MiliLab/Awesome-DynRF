@@ -98,6 +98,8 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[Pina: Learning a personalized implicit neural avatar from a single rgb-d video sequence](http://openaccess.thecvf.com/content/CVPR2022/html/Dong_PINA_Learning_a_Personalized_Implicit_Neural_Avatar_From_a_Single_CVPR_2022_paper.html)                                                       |CVPR 2022||Human Body  |
 |[X-avatar: Expressive human avatars](https://openaccess.thecvf.com/content/CVPR2023/html/Shen_X-Avatar_Expressive_Human_Avatars_CVPR_2023_paper.html)        |CVPR 2023   |[Code](https://github.com/Skype-line/X-Avatar)                                                                                                                |Human Body  |
 |[Pixel-aligned volumetric avatars](http://openaccess.thecvf.com/content/CVPR2021/html/Raj_Pixel-Aligned_Volumetric_Avatars_CVPR_2021_paper.html)  |CVPR 2021||Human Head  |
+|[4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                      |CVPR 2024|Human Performance|
+|[Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                     |ACM TOG 2021||Human Performance|
 
 ## Hand
 ### perprint
