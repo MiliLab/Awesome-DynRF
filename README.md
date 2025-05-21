@@ -74,7 +74,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | **Paper**                                                                                                             | **Conference/Journal** |**Code**    |**Type**    |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------|------------|------------|
 |[Generalizable neural performer: Learning robust radiance fields for human novel view synthesis](https://arxiv.org/abs/2204.11798)                           |arXiv 2022  |[Code](https://github.com/generalizable-neural-performer/gnr)                                                                                                 |Human Body  |
-
+|[Splatarmor: Articulated gaussian splatting for animatable humans from monocular rgb video](https://arxiv.org/abs/2311.10812)                    |arXiv 2023||Human Body  |
 
 
 ### Paper
@@ -101,8 +101,13 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                     |CVPR 2024||Human Performance|
 |[Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                     |ACM TOG 2021||Human Performance|
 |**👆 NeRF-based**| **👇 3DGS-based** |                                                                                                                 |                 |
-|[Hugs: Human gaussian splats](http://openaccess.thecvf.com/content/CVPR2024/html/Kocabas_HUGS_Human_Gaussian_Splats_CVPR_2024_paper.html)                                                                                                        |CVPR 2024|[Code](https://github.com/apple/ml-hugs)|Human Body|
-|[Gart: Gaussian articulated template models](https://openaccess.thecvf.com/content/CVPR2024/html/Lei_GART_Gaussian_Articulated_Template_Models_CVPR_2024_paper.html)                                                                                                       |CVPR 2024|[Code](https://github.com/JiahuiLei/GART)|Human Body|
+|[Hugs: Human gaussian splats](http://openaccess.thecvf.com/content/CVPR2024/html/Kocabas_HUGS_Human_Gaussian_Splats_CVPR_2024_paper.html)                                                                                                      |CVPR 2024|[Code](https://github.com/apple/ml-hugs)|Human Body  |
+|[Gart: Gaussian articulated template models](https://openaccess.thecvf.com/content/CVPR2024/html/Lei_GART_Gaussian_Articulated_Template_Models_CVPR_2024_paper.html)                                                                                                     |CVPR 2024|[Code](https://github.com/JiahuiLei/GART)|Human Body  |
+|[Expressive wholebody 3D gaussian avatar](https://fq.pkwyx.com/default/https/www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05715.pdf)                     |ECCV 2024   |[Code](https://github.com/mks0601/ExAvatar_RELEASE)                                                                                                    |Human Body and Face|
+|[Gauhuman: Articulated gaussian splatting from monocular human videos](http://openaccess.thecvf.com/content/CVPR2024/html/Hu_GauHuman_Articulated_Gaussian_Splatting_from_Monocular_Human_Videos_CVPR_2024_paper.html)            |CVPR 2024|[Code](https://github.com/skhu101/GauHuman)|Human Body  |
+|[Animatable gaussians: Learning pose-dependent gaussian maps for highfidelity human avatar modeling](http://openaccess.thecvf.com/content/CVPR2024/html/Li_Animatable_Gaussians_Learning_Pose-dependent_Gaussian_Maps_for_High-fidelity_Human_Avatar_CVPR_2024_paper.html)                                            |CVPR 2024   |[Code](https://github.com/lizhe00/AnimatableGaussians)                                                                                                        |Human Body  |
+|[Ash: Animatable gaussian splats for efficient and photoreal human rendering](http://openaccess.thecvf.com/content/CVPR2024/html/Pang_ASH_Animatable_Gaussian_Splats_for_Efficient_and_Photoreal_Human_Rendering_CVPR_2024_paper.html)         |CVPR 2024|[Code](https://github.com/kv2000/ASH)|Human Body  |
+|[3dgs-avatar: Animatable avatars via deformable 3d gaussian splatting](http://openaccess.thecvf.com/content/CVPR2024/html/Qian_3DGS-Avatar_Animatable_Avatars_via_Deformable_3D_Gaussian_Splatting_CVPR_2024_paper.html)|CVPR 2024|[Code](https://github.com/mikeqzy/3dgs-avatar-release)|Human Body |
 
 
 ## Hand
