@@ -100,8 +100,10 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[Pixel-aligned volumetric avatars](http://openaccess.thecvf.com/content/CVPR2021/html/Raj_Pixel-Aligned_Volumetric_Avatars_CVPR_2021_paper.html)  |CVPR 2021||Human Head  |
 |[4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                     |CVPR 2024||Human Performance|
 |[Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                     |ACM TOG 2021||Human Performance|
-|**👆 NeRF-based**| **👇 3DGS-based** | | |
-|[Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                     |ACM TOG 2021||Human Performance|
+|**👆 NeRF-based**| **👇 3DGS-based** |                                                                                                                 |                 |
+|[Hugs: Human gaussian splats](http://openaccess.thecvf.com/content/CVPR2024/html/Kocabas_HUGS_Human_Gaussian_Splats_CVPR_2024_paper.html)                                                                                                        |CVPR 2024|[Code](https://github.com/apple/ml-hugs)|Human Body|
+|[Gart: Gaussian articulated template models](https://openaccess.thecvf.com/content/CVPR2024/html/Lei_GART_Gaussian_Articulated_Template_Models_CVPR_2024_paper.html)                                                                                                       |CVPR 2024|[Code](https://github.com/JiahuiLei/GART)|Human Body|
+
 
 ## Hand
 ### perprint
