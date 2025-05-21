@@ -77,6 +77,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[Splatarmor: Articulated gaussian splatting for animatable humans from monocular rgb video](https://arxiv.org/abs/2311.10812)                    |arXiv 2023||Human Body  |
 |[Bags: Building animatable gaussian splatting from a monocular video with diffusion priors](https://arxiv.org/abs/2403.11427)                                |arXiv 2024  |[Code](https://github.com/Michaelszj/bags)                                                                                                                    |Human Body  |
 
+
 ### Paper
 | **Paper**                                                                                                             | **Conference/Journal** |**Code**    |**Type**    |
 |-----------------------------------------------------------------------------------------------------------------------|------------------------|------------|------------|
@@ -100,6 +101,11 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[Pixel-aligned volumetric avatars](http://openaccess.thecvf.com/content/CVPR2021/html/Raj_Pixel-Aligned_Volumetric_Avatars_CVPR_2021_paper.html)  |CVPR 2021||Human Head  |
 |[4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                     |CVPR 2024||Human Performance|
 |[Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                     |ACM TOG 2021||Human Performance|
+|[A-nerf: Articulated neural radiance fields for learning human shape, appearance, and pose](https://proceedings.neurips.cc/paper/2021/hash/65fc9fb4897a89789352e211ca2d398f-Abstract.html)                                                      |NeurIPS 2021|[Code](https://github.com/LemonATsu/A-NeRF)|Human Body  |
+|[Neural actor: Neural free-view synthesis of human actors with pose control](https://arxiv.org/abs/2106.02019)                                               |ACM TOG 2021|[Code](https://github.com/lingjie0206/Neural_Actor_Main_Code)                                                                                                 |Human Body  |
+|[Neural articulated radiance field](http://openaccess.thecvf.com/content/ICCV2021/html/Noguchi_Neural_Articulated_Radiance_Field_ICCV_2021_paper.html)       |ICCV 2021   |[Code](https://github.com/nogu-atsu/NARF)                                                                                                                     |Human Body  |
+|[Nasa neural articulated shape approximation](https://scribblethink.org/Work/Pdfs/deng_NasaNeuralArticulatedShapeApproximation.pdf)
+
 |**👆 NeRF-based**| **👇 3DGS-based** |                                                                                                                 |                 |
 |[Hugs: Human gaussian splats](http://openaccess.thecvf.com/content/CVPR2024/html/Kocabas_HUGS_Human_Gaussian_Splats_CVPR_2024_paper.html)                                                                                                      |CVPR 2024|[Code](https://github.com/apple/ml-hugs)|Human Body  |
 |[Gart: Gaussian articulated template models](https://openaccess.thecvf.com/content/CVPR2024/html/Lei_GART_Gaussian_Articulated_Template_Models_CVPR_2024_paper.html)                                                                                                     |CVPR 2024|[Code](https://github.com/JiahuiLei/GART)|Human Body  |
@@ -112,6 +118,14 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 |[Gaussianavatar: Towards realistic human avatar modeling from a single video via animatable 3d gaussians](http://openaccess.thecvf.com/content/CVPR2024/html/Hu_GaussianAvatar_Towards_Realistic_Human_Avatar_Modeling_from_a_Single_Video_CVPR_2024_paper.html)|CVPR 2024|[Code](https://github.com/aipixel/GaussianAvatar)|Human Body |
 |[Splattingavatar: Realistic real-time human avatars with mesh-embedded gaussian splatting](http://openaccess.thecvf.com/content/CVPR2024/html/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.html)                                            |CVPR 2024   |[Code](https://github.com/initialneil/SplattingAvatar)                                                                                                 |Human Body and Face|
 |[Gomavatar: Efficient animatable human modeling from monocular video using gaussians-on-mesh](https://openaccess.thecvf.com/content/CVPR2024/html/Wen_GoMAvatar_Efficient_Animatable_Human_Modeling_from_Monocular_Video_Using_Gaussians-on-Mesh_CVPR_2024_paper.html)                                          |CVPR 2024   |[Code](https://github.com/wenj/GoMAvatar)                                                                                                                     |Human Body  |
+|[Moda: Modeling deformable 3d objects from casual videos](https://link.springer.com/article/10.1007/s11263-024-02310-5)                                      |IJCV 2024   |[Code](https://github.com/ChaoyueSong/MoDA)                                                                                                                   |Human Body  |
+|[Lasr: Learning articulated shape reconstruction from a monocular video](http://openaccess.thecvf.com/content/CVPR2021/html/Yang_LASR_Learning_Articulated_Shape_Reconstruction_From_a_Monocular_Video_CVPR_2021_paper.html)             |CVPR 2021|[Code](https://github.com/google/lasr)|Human Body  |
+|[Viser: Video-specific surface embeddings for articulated 3d shape reconstruction](https://proceedings.neurips.cc/paper/2021/hash/a11f9e533f28593768ebf87075ab34f2-Abstract.html)                                                      |NeurIPS 2021|[Code](https://github.com/gengshan-y/viser)|Human Body  |
+
+
+
+
+
 
 
 ## Hand
