@@ -123,15 +123,23 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Hand
-### perprint
-| **Paper**                                                                                                                                                                                    | **Conference/Journal** | **Code** | **Type** |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|----------|
-| [Lisa: Learning implicit shape and appearance of hands](http://openaccess.thecvf.com/content/CVPR2022/html/Corona_LISA_Learning_Implicit_Shape_and_Appearance_of_Hands_CVPR_2022_paper.html) | CVPR 2022              |          | Hand     |
-|                                                                                                                                                                                              |                        |          |          |
-
-### Paper
+### Perprint
 | **Paper** | **Conference/Journal** | **Code** | **Type** |
 |-----------|------------------------|----------|----------|
+
+
+
+### Paper
+| **Paper**                                                                                                                                                                                                                                                                      | **Conference/Journal** | **Code**                                            | **Type** |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------|----------|
+| [Lisa: Learning implicit shape and appearance of hands](http://openaccess.thecvf.com/content/CVPR2022/html/Corona_LISA_Learning_Implicit_Shape_and_Appearance_of_Hands_CVPR_2022_paper.html)                                                                                   | CVPR 2022              |                                                     | Hand     |
+| [Livehand: Real-time and photorealistic neural hand rendering](http://openaccess.thecvf.com/content/ICCV2023/html/Mundra_LiveHand_Real-time_and_Photorealistic_Neural_Hand_Rendering_ICCV_2023_paper.html)                                                                     | ICCV 2023              | [Code](https://github.com/amundra15/livehand)       | Hand     |
+| [URhand: Universal relightable hands](http://openaccess.thecvf.com/content/CVPR2024/html/Chen_URHand_Universal_Relightable_Hands_CVPR_2024_paper.html)                                                                                                                         | CVPR 2024              | [Code](https://github.com/facebookresearch/goliath) | Hand     |
+| [Relightablehands: Efficient neural relighting of articulated hand models](http://openaccess.thecvf.com/content/CVPR2023/html/Iwase_RelightableHands_Efficient_Neural_Relighting_of_Articulated_Hand_Models_CVPR_2023_paper.html)                                              | CVPR 2023              |                                                     | Hand     | 
+| [HandRT: Simultaneous hand shape and appearance reconstruction with pose tracking from monocular RGB-d video](https://ieeexplore.ieee.org/abstract/document/10938919/?casa_token=ufZHfP3HGXEAAAAA:pFNAjIELvIyYjNgF8a2gYp-srVDmbYAbMlm2MOgQhHAB5fXUzGoECJsgvEjq_zGEI75Ju8IjH8U) | TPAMI 2025             | [Code](https://github.com/pmkalshetti/handrt)       | Hand     |
+| [What’s in your hands? 3d reconstruction of generic objects in hands](http://openaccess.thecvf.com/content/CVPR2022/html/Ye_Whats_in_Your_Hands_3D_Reconstruction_of_Generic_Objects_in_CVPR_2022_paper.html)                                                                  | CVPR 2022              | [Code](https://github.com/JudyYe/shelf-sup-mesh)    | Hand     |
+
+
 
 
 
