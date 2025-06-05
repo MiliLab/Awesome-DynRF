@@ -123,12 +123,6 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Hand
-### Perprint
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
-
-
-
 ### Paper
 | **Paper**                                                                                                                                                                                                                                                                      | **Conference/Journal** | **Code**                                            | **Type** |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------|----------|
@@ -140,20 +134,13 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | [What’s in your hands? 3d reconstruction of generic objects in hands](http://openaccess.thecvf.com/content/CVPR2022/html/Ye_Whats_in_Your_Hands_3D_Reconstruction_of_Generic_Objects_in_CVPR_2022_paper.html)                                                                  | CVPR 2022              | [Code](https://github.com/JudyYe/shelf-sup-mesh)    | Hand     |
 
 
-
-
-
-
 ## Animal
-### perprint
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
-
-
 ### Paper
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
-
+| **Paper**                                                                                                                                                                         | **Conference/Journal** | **Code**                                  | **Type** |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------|----------|
+| [3d menagerie: Modeling the 3d shape and pose of animals] (http://openaccess.thecvf.com/content_cvpr_2017/html/Zuffi_3D_Menagerie_Modeling_CVPR_2017_paper.html)                  | CVPR 2017              |                                           | Animal   |
+| [Who left the dogs out? 3d animal reconstruction with expectation maximization in the loop](https://link.springer.com/chapter/10.1007/978-3-030-58621-8_12)                       | ECCV 2022              | [Code](https://github.com/benjiebob/WLDO) | Animal   |
+| [Reconstructing animatable categories from videos](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_Reconstructing_Animatable_Categories_From_Videos_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/gengshan-y/rac) | Animal   |
 
 
 ## Other Objects
