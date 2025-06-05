@@ -136,11 +136,15 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 ## Animal
 ### Paper
-| **Paper**                                                                                                                                                                         | **Conference/Journal** | **Code**                                  | **Type** |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------|----------|
-| [3d menagerie: Modeling the 3d shape and pose of animals] (http://openaccess.thecvf.com/content_cvpr_2017/html/Zuffi_3D_Menagerie_Modeling_CVPR_2017_paper.html)                  | CVPR 2017              |                                           | Animal   |
-| [Who left the dogs out? 3d animal reconstruction with expectation maximization in the loop](https://link.springer.com/chapter/10.1007/978-3-030-58621-8_12)                       | ECCV 2022              | [Code](https://github.com/benjiebob/WLDO) | Animal   |
-| [Reconstructing animatable categories from videos](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_Reconstructing_Animatable_Categories_From_Videos_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/gengshan-y/rac) | Animal   |
+| **Paper**                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                          | **Type** |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------|----------|
+| [3d menagerie: Modeling the 3d shape and pose of animals](http://openaccess.thecvf.com/content_cvpr_2017/html/Zuffi_3D_Menagerie_Modeling_CVPR_2017_paper.html)                                                        | CVPR 2017              |                                                   | Animal   |
+| [Who left the dogs out? 3d animal reconstruction with expectation maximization in the loop](https://link.springer.com/chapter/10.1007/978-3-030-58621-8_12)                                                            | ECCV 2022              | [Code](https://github.com/benjiebob/WLDO)         | Animal   |
+| [Reconstructing animatable categories from videos](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_Reconstructing_Animatable_Categories_From_Videos_CVPR_2023_paper.html)                                      | CVPR 2023              | [Code](https://github.com/gengshan-y/rac)         | Animal   |
+| [Lassie: Learning articulated shapes from sparse image ensemble via 3d part discovery](https://proceedings.neurips.cc/paper_files/paper/2022/hash/6274d57365d7a6be06e58cad30d1b9da-Abstract-Conference.html)           | NeurIPS 2022           | [Code](https://github.com/google/hi-lassie)       | Animal   |
+| [Artemis: articulated neural pets with appearance and motion synthesis](https://arxiv.org/abs/2202.05628)                                                                                                              | SIGGRAPH 2022          | [Code](https://github.com/HaiminLuo/Artemis)      | Animal   |
+| [Banmo: Building animatable 3d neural models from many casual videos](http://openaccess.thecvf.com/content/CVPR2022/html/Yang_BANMo_Building_Animatable_3D_Neural_Models_From_Many_Casual_Videos_CVPR_2022_paper.html) | CVPR 2022              | [Code](https://github.com/facebookresearch/banmo) | Animal   |
+
 
 
 ## Other Objects
