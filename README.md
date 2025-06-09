@@ -150,15 +150,19 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Other Objects
-### perprint
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
-
-
 ### Paper
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
+| **Paper**                                                                                                                                                                                                                                | **Conference/Journal** | **Code**                                      | **Type** |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------|----------|
+| [Clanerf: Category-level articulated neural radiance field](https://ieeexplore.ieee.org/abstract/document/9812272/?casa_token=6_rU_yhrMM4AAAAA:QSMnTVBIHNt2TQIhGn7ISTYTSTjT-y9ceMgpusOT4qS3ojid4X0mSxCkhun2vgpPFpvMXmAzRIGnaQ)           | ICRA 2022              |                                               | Object   |
+| [Paris: Part-level reconstruction and motion analysis for articulated objects](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_PARIS_Part-level_Reconstruction_and_Motion_Analysis_for_Articulated_Objects_ICCV_2023_paper.html) | ICCV 2023              | [Code](https://github.com/3dlg-hcvc/PARIS)    | Object   |
+| [Leia: Latent view-invariant embeddings for implicit 3d articulation](https://link.springer.com/chapter/10.1007/978-3-031-72640-8_12)                                                                                                    | ECCV 2024              |                                               | Object   |
+| [Reacto: Reconstructing articulated objects from a single video](http://openaccess.thecvf.com/content/CVPR2024/html/Song_REACTO_Reconstructing_Articulated_Objects_from_a_Single_Video_CVPR_2024_paper.html)                             | CVPR 2024              | [Code](https://github.com/ChaoyueSong/REACTO) | Object   |
 
+
+### perprint
+| **Paper**                                                                                                                       | **Conference/Journal** | **Code**                                  | **Type** |
+|---------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------|----------|
+| [Artgs: Building interactable replicas of complex articulated objects via gaussian splatting](https://arxiv.org/abs/2502.19459) | arXiv 2025             | [Code](https://github.com/YuLiu-LY/ArtGS) | Object   |
 
 
 # Reconstruction with Nor-rigid Motion
