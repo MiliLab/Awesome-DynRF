@@ -173,8 +173,13 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ### Paper
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
+| **Paper**                                                                                                                                                                                                 | **Conference/Journal** | **Code**                                                    | **Type**       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
+| [Space-time neural irradiance fields for free-viewpoint video](http://openaccess.thecvf.com/content/CVPR2021/html/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.html) | CVPR 2021              | [Code](https://github.com/wxian3/video-nerf)                | General Motion |
+| [Real-time photorealistic dynamic scene representation and rendering with 4d gaussian splatting](https://arxiv.org/abs/2310.10642)                                                                        | ICLR 2024              | [Code](https://github.com/fudan-zvg/4d-gaussian-splatting)  | General Motion |
+| [Neural 3d video synthesis from multi-view video](http://openaccess.thecvf.com/content/CVPR2022/html/Li_Neural_3D_Video_Synthesis_From_Multi-View_Video_CVPR_2022_paper.html)                             | CVPR 2022              | [Code](https://github.com/facebookresearch/Neural_3D_Video) | General Motion |
+
+
 
 ## Canonical Space with Deformation Field
 ## Frame-to-Frame Flow Field
