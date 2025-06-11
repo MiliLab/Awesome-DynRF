@@ -178,7 +178,9 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | [Space-time neural irradiance fields for free-viewpoint video](http://openaccess.thecvf.com/content/CVPR2021/html/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.html) | CVPR 2021              | [Code](https://github.com/wxian3/video-nerf)                | General Motion |
 | [Real-time photorealistic dynamic scene representation and rendering with 4d gaussian splatting](https://arxiv.org/abs/2310.10642)                                                                        | ICLR 2024              | [Code](https://github.com/fudan-zvg/4d-gaussian-splatting)  | General Motion |
 | [Neural 3d video synthesis from multi-view video](http://openaccess.thecvf.com/content/CVPR2022/html/Li_Neural_3D_Video_Synthesis_From_Multi-View_Video_CVPR_2022_paper.html)                             | CVPR 2022              | [Code](https://github.com/facebookresearch/Neural_3D_Video) | General Motion |
-
+| [Suds: Scalable urban dynamic scenes](http://openaccess.thecvf.com/content/CVPR2023/html/Turki_SUDS_Scalable_Urban_Dynamic_Scenes_CVPR_2023_paper.html)                                                   | CVPR 2023              | [Code](https://github.com/hturki/suds)                      | Urban          |
+| [Neural volumes: Learning dynamic renderable volumes from images](https://arxiv.org/abs/1906.07751)                                                                                                       | ACM TOG 2023           | [Code](https://github.com/facebookresearch/neuralvolumes)   | Object         |
+| [Neural surface reconstruction of dynamic scenes with monocular rgbd camera](https://proceedings.neurips.cc/paper_files/paper/2022/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html)        | NeurIPS 2022           | [Code](https://ustc3dv.github.io/ndr/)                      | Object         |
 
 
 ## Canonical Space with Deformation Field
