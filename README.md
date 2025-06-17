@@ -167,11 +167,6 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 # Reconstruction with Nor-rigid Motion
 ## 4D Spacetime
-### perprint
-| **Paper** | **Conference/Journal** | **Code** | **Type** |
-|-----------|------------------------|----------|----------|
-
-
 ### Paper
 | **Paper**                                                                                                                                                                                                 | **Conference/Journal** | **Code**                                                    | **Type**       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
@@ -185,10 +180,15 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 ## Canonical Space with Deformation Field
 ### Paper
-| **Paper**                                                                                                                                                                                                     | **Conference/Journal** | **Code**                                         | **Type** |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------|----------|
-| [D-nerf: Neural radiance fields for dynamic scenes](https://openaccess.thecvf.com/content/CVPR2021/html/Pumarola_D-NeRF_Neural_Radiance_Fields_for_Dynamic_Scenes_CVPR_2021_paper.html?ref=labelbox.ghost.io) | CVPR 2021              | [Code](https://github.com/albertpumarola/D-NeRF) | Object   |
-
+| **Paper**                                                                                                                                                                                                                                         | **Conference/Journal** | **Code**                                                    | **Type**       |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
+| [D-nerf: Neural radiance fields for dynamic scenes](https://openaccess.thecvf.com/content/CVPR2021/html/Pumarola_D-NeRF_Neural_Radiance_Fields_for_Dynamic_Scenes_CVPR_2021_paper.html?ref=labelbox.ghost.io)                                     | CVPR 2021              | [Code](https://github.com/albertpumarola/D-NeRF)            | Object         |
+| [Nerfies: Deformable neural radiance fields](http://openaccess.thecvf.com/content/ICCV2021/html/Park_Nerfies_Deformable_Neural_Radiance_Fields_ICCV_2021_paper.html)                                                                              | ICCV 2021              | [Code](https://github.com/google/nerfies)                   | General Motion |
+| [Hypernerf: a higher-dimensional representation for topologically varying neural radiance fields](https://arxiv.org/abs/2106.13228)                                                                                                               | ACM TOG 2021           | [Code](https://github.com/google/hypernerf)                 | General Motion |
+| [4d gaussian splatting for real-time dynamic scene rendering](http://openaccess.thecvf.com/content/CVPR2024/html/Wu_4D_Gaussian_Splatting_for_Real-Time_Dynamic_Scene_Rendering_CVPR_2024_paper.html)                                             | CVPR 2024              | [Code](https://github.com/hustvl/4DGaussians)               | General Motion |
+| [Deformable 3d gaussians for high-fidelity monocular dynamic scene reconstruction](http://openaccess.thecvf.com/content/CVPR2024/html/Yang_Deformable_3D_Gaussians_for_High-Fidelity_Monocular_Dynamic_Scene_Reconstruction_CVPR_2024_paper.html) | CVPR 2024              | [Code](https://github.com/ingra14m/Deformable-3D-Gaussians) | General Motion |
+| [MoDGS: Dynamic Gaussian Splatting from Causuallycaptured Monocular Videos](https://modgs.github.io/static/paper.pdf)                                                                                                                             | ICLR 2025              | [Code](https://github.com/MobiusLqm/MoDGS)                  | General Motion |
+| [Neural surface reconstruction of dynamic scenes with monocular rgbd camera](https://proceedings.neurips.cc/paper_files/paper/2022/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html)                                                | NeurIPS 2022           | [Code](https://github.com/USTC3DV/NDR-code)                 | Object         |
 
 
 ## Frame-to-Frame Flow Field
