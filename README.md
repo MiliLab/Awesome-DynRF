@@ -184,6 +184,13 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Canonical Space with Deformation Field
+### Paper
+| **Paper**                                                                                                                                                                                                     | **Conference/Journal** | **Code**                                         | **Type** |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------|----------|
+| [D-nerf: Neural radiance fields for dynamic scenes](https://openaccess.thecvf.com/content/CVPR2021/html/Pumarola_D-NeRF_Neural_Radiance_Fields_for_Dynamic_Scenes_CVPR_2021_paper.html?ref=labelbox.ghost.io) | CVPR 2021              | [Code](https://github.com/albertpumarola/D-NeRF) | Object   |
+
+
+
 ## Frame-to-Frame Flow Field
 ## Point Tracking
 ## Factorization
