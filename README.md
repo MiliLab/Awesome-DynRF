@@ -192,6 +192,17 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Frame-to-Frame Flow Field
+### Paper
+| **Paper**                                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                                   | **Type**       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|------------------------------------------------------------|----------------|
+| [Dynamic view synthesis from dynamic monocular video](https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Dynamic_View_Synthesis_From_Dynamic_Monocular_Video_ICCV_2021_paper.html?ref=https://githubhelp.com)                     | ICCV 2021              | [Code](https://github.com/gaochen315/DynamicNeRF)          | General Motion |
+| [Neural radiance flow for 4d view synthesis and video processing](https://www.computer.org/csdl/proceedings-article/iccv/2021/281200o4304/1BmGe2YO7yU)                                                                                 | ICCV 2021              | [Code](https://github.com/yilundu/nerflow)                 | General Motion |
+| [Emernerf: Emergent spatial-temporal scene decomposition via selfsupervision](https://openreview.net/forum?id=ycv2z8TYur)                                                                                                              | ICLR 2024              | [Code](https://github.com/NVlabs/EmerNeRF)                 | Urban          |
+| [Neural scene flow fields for space-time view synthesis of dynamic scenes](http://openaccess.thecvf.com/content/CVPR2021/html/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.html)               | CVPR 2021              |                                                            | General Motion |
+| [Occupancy flow: 4d reconstruction by learning particle dynamics](http://openaccess.thecvf.com/content_ICCV_2019/html/Niemeyer_Occupancy_Flow_4D_Reconstruction_by_Learning_Particle_Dynamics_ICCV_2019_paper.html)                    | ICCV 2019              | [Code](https://github.com/autonomousvision/occupancy_flow) | Human          |
+| [Common pets in 3d: Dynamic new-view synthesis of real-life deformable categories](http://openaccess.thecvf.com/content/CVPR2023/html/Sinha_Common_Pets_in_3D_Dynamic_New-View_Synthesis_of_Real-Life_Deformable_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/facebookresearch/cop3d)          | Animal         |
+
+
 ## Point Tracking
 ## Factorization
 
