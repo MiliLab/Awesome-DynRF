@@ -206,6 +206,18 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 ## Point Tracking
+### Arxiv
+| **Paper**                                                                                                                      | **Conference/Journal** | **Code**                                                     | **Type**       |
+|--------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------|----------------|
+|[Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)|arXiv 2021|[Code]
+
+### Paper
+| **Paper**                                                                                                                      | **Conference/Journal** | **Code**                                                     | **Type**       |
+|--------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------|----------------|
+| [Dynamic 3d gaussians: Tracking by persistent dynamic view synthesis](https://ieeexplore.ieee.org/abstract/document/10550869/) | 3DV 2024               | [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) | General Motion |
+|[Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)|arXiv 2021|
+
+
 ## Factorization
 
 # Reconstructing with Hybrid Motion
