@@ -207,17 +207,26 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 ## Point Tracking
 ### Arxiv
-| **Paper**                                                                                                                      | **Conference/Journal** | **Code**                                                     | **Type**       |
-|--------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------|----------------|
-|[Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)|arXiv 2021|[Code]
+| **Paper**                                                                                     | **Conference/Journal** | **Code** | **Type** |
+|-----------------------------------------------------------------------------------------------|------------------------|----------|----------|
+| [Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994) | arXiv 2021             | [Code]   |          |
 
 ### Paper
 | **Paper**                                                                                                                      | **Conference/Journal** | **Code**                                                     | **Type**       |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------|----------------|
 | [Dynamic 3d gaussians: Tracking by persistent dynamic view synthesis](https://ieeexplore.ieee.org/abstract/document/10550869/) | 3DV 2024               | [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) | General Motion |
-|[Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)|arXiv 2021|
+| [Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)                                  | arXiv 2021             |
 
 
 ## Factorization
+| **Paper**                                                                                                                                                                                                                                                                  | **Conference/Journal** | **Code**                                           | **Type**       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------------------------------------------|----------------|
+| [4d gaussian splatting for real-time dynamic scene rendering](http://openaccess.thecvf.com/content/CVPR2024/html/Wu_4D_Gaussian_Splatting_for_Real-Time_Dynamic_Scene_Rendering_CVPR_2024_paper.html)                                                                      | CVPR 2024              | [Code](https://github.com/hustvl/4DGaussians)      | General Motion |
+| [K-planes: Explicit radiance fields in space, time, and appearance](http://openaccess.thecvf.com/content/CVPR2023/html/Fridovich-Keil_K-Planes_Explicit_Radiance_Fields_in_Space_Time_and_Appearance_CVPR_2023_paper.html)                                                 | CVPR 2023              | [Code](https://github.com/sarafridov/K-Planes)     | General Motion |
+| [Hexplane: A fast representation for  dynamic scenes](http://openaccess.thecvf.com/content/CVPR2023/html/Cao_HexPlane_A_Fast_Representation_for_Dynamic_Scenes_CVPR_2023_paper.html)                                                                                       | CVPR 2023              | [Code](https://github.com/Caoang327/HexPlane)      | General Motion |
+| [Tensor4d: Efficient neural 4d decomposition for high-fidelity dynamic reconstruction and rendering](http://openaccess.thecvf.com/content/CVPR2023/html/Shao_Tensor4D_Efficient_Neural_4D_Decomposition_for_High-Fidelity_Dynamic_Reconstruction_and_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/ingra14m/Tensor4D-DNeRF) | General Motion |
+| [Splatfields: Neural gaussian splats for sparse 3d and 4d reconstruction](https://link.springer.com/chapter/10.1007/978-3-031-72627-9_18)                                                                                                                                  | ECCV 2024              | [Code](https://github.com/markomih/SplatFields)    | Object         |
+| [Fast High Dynamic Range Radiance Fields for Dynamic Scenes](https://arxiv.org/abs/2401.06052)                                                                                                                                                                             | 3DV 2024               | [Code](https://github.com/hustvl/HDR-HexPlane)     | General Motion |
+
 
 # Reconstructing with Hybrid Motion
