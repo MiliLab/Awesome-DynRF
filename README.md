@@ -102,7 +102,6 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | [4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                                                    | CVPR 2024              |                                                                 | Human Performance   |
 | [Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                                                                                                                                                                   | ACM TOG 2021           |                                                                 | Human Performance   |
 | [A-nerf: Articulated neural radiance fields for learning human shape, appearance, and pose](https://proceedings.neurips.cc/paper/2021/hash/65fc9fb4897a89789352e211ca2d398f-Abstract.html)                                                                                              | NeurIPS 2021           | [Code](https://github.com/LemonATsu/A-NeRF)                     | Human Body          |
-| [Neural actor: Neural free-view synthesis of human actors with pose control](https://arxiv.org/abs/2106.02019)                                                                                                                                                                          | ACM TOG 2021           | [Code](https://github.com/lingjie0206/Neural_Actor_Main_Code)   | Human Body          |
 | [Neural articulated radiance field](http://openaccess.thecvf.com/content/ICCV2021/html/Noguchi_Neural_Articulated_Radiance_Field_ICCV_2021_paper.html)                                                                                                                                  | ICCV 2021              | [Code](https://github.com/nogu-atsu/NARF)                       | Human Body          |
 | [Nasa neural articulated shape approximation](https://scribblethink.org/Work/Pdfs/deng_NasaNeuralArticulatedShapeApproximation.pdf)                                                                                                                                                     |                        |                                                                 |                     |
 | [Lasr: Learning articulated shape reconstruction from a monocular video](http://openaccess.thecvf.com/content/CVPR2021/html/Yang_LASR_Learning_Articulated_Shape_Reconstruction_From_a_Monocular_Video_CVPR_2021_paper.html)                                                            | CVPR 2021              | [Code](https://github.com/google/lasr)                          | Human Body          |
@@ -230,3 +229,21 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 
 # Reconstructing with Hybrid Motion
+| **Paper**                                                                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                            | **Type** |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------|----------|
+| [OmniRe: Omni Urban Scene Recon struction](https://openreview.net/forum?id=9cwxZxJixB)                                                                                                                                                                                 | ICLR 2024              | [Code](https://github.com/ziyc/drivestudio)         | Urban    |
+| [Tava: Template-free animatable volumetric actors](https://link.springer.com/chapter/10.1007/978-3-031-19824-3_25)                                                                                                                                                     | ECCV 2022              | [Code](https://github.com/facebookresearch/tava)    | Human    |
+| [Expressive whole-body 3D gaussian avatar](https://link.springer.com/chapter/10.1007/978-3-031-72940-9_2)                                                                                                                                                              | ECCV 2024              | [Code](https://github.com/mks0601/ExAvatar_RELEASE) | Human    |
+| [Neuman: Neural human radiance field from a single video](https://link.springer.com/chapter/10.1007/978-3-031-19824-3_24)                                                                                                                                              | ECCV 2022              | [Code](https://github.com/apple/ml-neuman)          | Human    |
+| [Gomavatar: Efficient animatable human modeling from monocular video using gaussians-on-mesh](https://openaccess.thecvf.com/content/CVPR2024/html/Wen_GoMAvatar_Efficient_Animatable_Human_Modeling_from_Monocular_Video_Using_Gaussians-on-Mesh_CVPR_2024_paper.html) | CVPR 2024              | [Code](https://github.com/wenj/GoMAvatar)           | Human    |
+| [Learning neural volumetric representations of dynamic humans in minutes](http://openaccess.thecvf.com/content/CVPR2023/html/Geng_Learning_Neural_Volumetric_Representations_of_Dynamic_Humans_in_Minutes_CVPR_2023_paper.html)                                        | CVPR 2023              | [Code](https://github.com/zju3dv/instant-nvr/)      | Human    |
+
+
+
+
+
+
+
+
+
+
