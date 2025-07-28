@@ -1,4 +1,10 @@
 # Awesome-DynRF
+<div style="text-align: center;">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2505.10049-b31b1b.svg)](https://arxiv.org/abs/2505.10049)
+
+</div>
+
 Complete bibliographic list for Paper: "Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field".
 
 # Abstract
