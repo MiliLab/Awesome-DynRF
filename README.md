@@ -5,13 +5,110 @@
 
 </div>
 
-Complete bibliographic list for Paper: "Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field".
+![Overview figure](./assets/roadmap.png)
 
-# Abstract
-![Overview figure](./assets/overview.png)
-Dynamic scene representation and reconstruction have undergone transformative advances in recent years, catalyzed by breakthroughs in neural radiance fields and 3D Gaussian splatting techniques. While initially developed for static environments, these methodologies have rapidly evolved to address the complexities inherent in 4D dynamic scenes through an expansive body of research. Coupled with innovations in differentiable volumetric rendering, these approaches have significantly enhanced the quality of motion representation and dynamic scene reconstruction, thereby garnering substantial attention from the computer vision and graphics communities. This survey presents a systematic analysis of over 200 papers focused on dynamic scene representation using radiance field, spanning the spectrum from implicit neural representations to explicit Gaussian primitives. We categorize and evaluate these works through multiple critical lenses: motion representation paradigms, reconstruction techniques for varied scene dynamics, auxiliary information integration strategies, and regularization approaches that ensure temporal consistency and physical plausibility. We organize diverse methodological approaches under a unified representational framework, concluding with a critical examination of persistent challenges and promising research directions. By providing this comprehensive overview, we aim to establish a definitive reference for researchers entering this rapidly evolving field while offering experienced practitioners a systematic understanding of both conceptual principles and practical frontiers in dynamic scene reconstruction.
+<div style="text-align: center;">
 
-# Framework
+**Diverse methodological approaches under a unified representational framework**
+
+</div>
+
+More content and details can be found in our Survey Paper: [Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field](https://arxiv.org/abs/2505.10049).
+
+# 🔍 Contents
+[1. Abstract](#-1-Abstract)
+
+[2. Taxonomy](#-2-taxonomy)
+
+[3. Benchmark](#benchmark)
+
+[4. Paper List](#paper-list)
+
+
+# 📌 1. Abstract
+Dynamic scene representation and reconstruction have undergone transformative advances in recent years, catalyzed by 
+breakthroughs in neural radiance fields and 3D Gaussian splatting techniques. While initially developed for static 
+environments, these methodologies have rapidly evolved to address the complexities inherent in 4D dynamic scenes 
+through an expansive body of research. Coupled with innovations in differentiable volumetric rendering, these approaches
+have significantly enhanced the quality of motion representation and dynamic scene reconstruction, thereby garnering 
+substantial attention from the computer vision and graphics communities. This survey presents a systematic analysis 
+of over 200 papers focused on dynamic scene representation using radiance field, spanning the spectrum from implicit 
+neural representations to explicit Gaussian primitives. We categorize and evaluate these works through multiple critical
+lenses: motion representation paradigms, reconstruction techniques for varied scene dynamics, auxiliary information 
+integration strategies, and regularization approaches that ensure temporal consistency and physical plausibility. 
+We organize diverse methodological approaches under a unified representational framework, concluding with a critical 
+examination of persistent challenges and promising research directions. By providing this comprehensive overview, 
+we aim to establish a definitive reference for researchers entering this rapidly evolving field while offering 
+experienced practitioners a systematic understanding of both conceptual principles and practical frontiers in dynamic 
+scene reconstruction.
+
+
+# 📚 2. Taxonomy
+## 2.1 Motion Types
+![Overview figure](./assets/motion-types.png)
+
+<div style="text-align: center;">
+
+**A 2D illustration of various motion types**
+
+</div>
+
+Real-world environments exhibit diverse motion patterns that can be categorized hierarchically from specific to general 
+types. We classify these patterns into rigid motion, articulated motion, general non-rigid motion, and hybrid motion, 
+which combines multiple patterns.
+
+## 2.2 Motion Representation Methods
+![Overview figure](./assets/motion-representation.png)
+
+<div style="text-align: center;">
+
+**Illustration of typical motion representation methods**
+
+</div>
+
+## 2.3 Scene Representation
+![Overview figure](./assets/scenes-representation.png)
+
+<div style="text-align: center;">
+
+**A unified framework to encapsulate various reconstruction paradigms**
+
+</div>
+
+# ⚡ 3. Benchmark
+# Dataset List  
+
+**Note:** This table needs to be supplemented according to the type of exercise, and add references  
+
+| Datasets                     | Year | Inputs                                                                 | Additional Annotations                                                                 | Motion                     |
+|------------------------------|------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------|
+| 🟥 Tanks and Temples [1]      | 2017 | Monocular videos                                                      | 3D surface geometry                                                                   | Non-rigid Motion           |
+| 🟥 CMU Panoptic [2][3][4]     | 2017 | Multi-view videos, 480 VGA camera views, 10 RGB-D sensors             | 3D body pose, 3D facial landmarks, Transcripts + speaker ID                           | Non-rigid Motion           |
+| 🟥 D-NeRF [5]                 | 2021 | Monocular videos                                                      | -                                                                                     | Non-rigid Motion           |
+| 🟥 Plenoptic [6]              | 2022 | Multi-view videos                                                     | Depth maps, RGB images, and calibration data                                          | Non-rigid Motion           |
+| 🟥 Tensor4d [7]               | 2023 | Multi-view videos captured by RGB cameras                             | -                                                                                     | Non-rigid Motion           |
+| 🟥 Epic Fields [8]            | 2024 | Monocular videos                                                      | Semantic annotations for actions and objects, masks of hands and active objects       | Non-rigid Motion           |
+| 🟨 KITTI [9]                  | 2012 | Stereo images                                                         | Stereo images, optical flow, visual odometry, 3D object detection, 3D tracking        | Rigid Motion               |
+| 🟨 nuScenes [10]              | 2020 | 1 LiDAR, 5 RADAR, 6 cameras, IMU, and GPS                             | 3D bounding boxes, semantic categories, object attributes for 23 object classes      | Rigid Motion               |
+| 🟨 Waymo [11]                 | 2020 | High-resolution sensor data (LiDAR, camera, radar)                    | 3D semantic segmentation labels, object trajectories, 3D maps                        | Rigid Motion               |
+| 🟨 KITTI-360 [12]             | 2022 | Fisheye images, Pushbroom laser scans, Geo-localized vehicle poses    | Semantic instance annotations in 2D and 3D Accurate localization                     | Rigid Motion               |
+| 🟨 Virtual KITTI 2 [13]       | 2020 | RGB images                                                            | Semantic segmentation, instance segmentation, depth, optical flow, and scene flow    | Rigid Motion               |
+| 🟨 NeRF On-The-Road [14][11]  | 2023 | Subset of Waymo open Dataset (dynamic driving scenes)                 | Scene geometry, appearance, motion, and semantics via self-supervision               | Rigid Motion               |
+| 🟨 Argoverse NVS [15][16]     | 2024 | High-res images from 7 ring cameras, 2 stereo cameras, LiDAR          | 3D cuboid annotations for 26 object categories, map-aligned poses, and HD maps       | Rigid Motion               |
+| 🟦 RobustNeRF Dataset [17]    | 2023 | Multi-view videos with dynamic distractors                            | Distractors modeled as outliers                                                      | Dynamic Noise              |
+| 🟩 People-Snapshot [18]       | 2018 | Monocular videos                                                      | 3D body models, textures, and animation skeletons                                    | Articulated & Non-rigid    |
+| 🟩 DynaCap [19]               | 2021 | Multi-view videos                                                     | -                                                                                     | Articulated & Non-rigid    |
+| 🟩 ZJU-Mocap [20]             | 2021 | Multi-view videos                                                     | -                                                                                     | Articulated & Non-rigid    |
+| 🟩 Neuman [21]                | 2022 | Monocular videos                                                      | Human pose, shape, masks, camera poses, sparse scene model, and depth maps           | Articulated & Non-rigid    |
+| 🟩 THuman4 [22]               | 2022 | Multi-view videos                                                     | Foreground segmentation, calibration data, and SMPL-X fitting                         | Articulated & Non-rigid    |
+| 🟩 ActorsHQ [23]              | 2023 | Multi-view videos from 160 synchronized cameras                       | Axis-aligned bounding boxes, occupancy grids, Alembic format meshes                  | Articulated & Non-rigid    |
+| 🟩 CoP3D [24]                 | 2023 | Monocular casual videos of different cats and dogs                    | Camera parameters and object masks                                                   | Articulated & Non-rigid    |
+
+**References:**  
+[1] [knapitsch2017tanks], [2] [Joo_2015_ICCV], [3] [Joo_2017_TPAMI], [4] [Simon_2017_CVPR], [5] [pumarola2021d], [6] [li2022neural], [7] [shao2023tensor4d], [8] [tschernezki2024epic], [9] [geiger2012we], [10] [caesar2020nuscenes], [11] [sun2020scalability], [12] [liao2022kitti], [13] [cabon2020virtual], [14] [yang2023emernerf], [15] [fischer2024multi], [16] [wilson2023argoverse], [17] [sabour2023robustnerf], [18] [alldieck2018video], [19] [habermann2021real], [20] [peng2021neural], [21] [jiang2022neuman], [22] [zheng2022structured], [23] [icsik2023humanrf], [24] [sinha2023common]
+
+# 📜 4. Paper Lists
+## 4.1 Framework
 [Survey](#survey)
 
 [Reconstruction with Rigid Motion](#reconstruction-with-rigid-motion)
@@ -22,7 +119,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 
 [Reconstruction with Hybrid Motion](#reconstructing-with-hybrid-motion)
 
-# Survey
+## Survey
 ### perprint
 | **Paper**                                                                                                                                         | **Conference/Journal** | **Code** | **Type** |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|----------|
@@ -54,7 +151,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | [Neural radiance fields in the industrial and robotics domain: Applications, research opportunities and use cases](https://www.sciencedirect.com/science/article/pii/S0736584524000978?casa_token=IbEL6IFsBrcAAAAA:N1ijHI5IXgjmtYh0WVADDM4OBXoHsdAMhef9VZohHdghCTMo-8QBBfCvPgbASBFib8yr_ywZRg) | RCIM 2024                       |          | Survey   |
 | [A Brief Review on Differentiable Rendering: Recent Advances and Challenges](https://www.mdpi.com/2079-9292/13/17/3546)                                                                                                                                                                        | Electronics 2024                |          | Survey   |
 
-# Reconstruction with Rigid Motion
+## Reconstruction with Rigid Motion
 ### perprint
 | **Paper**                                                                                                                                   | **Conference/Journal** | **Code** | **Type** |
 |---------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|----------|
@@ -75,7 +172,7 @@ Dynamic scene representation and reconstruction have undergone transformative ad
 | [Unisim: A neural closedloop sensor simulator](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_UniSim_A_Neural_Closed-Loop_Sensor_Simulator_CVPR_2023_paper.html)                                                                                                      | CVPR 2023              | [Project Site](https://waabi.ai/unisim/)                                       | Urban    |
 | [Neurad: Neural rendering for autonomous driving](http://openaccess.thecvf.com/content/CVPR2024/html/Tonderski_NeuRAD_Neural_Rendering_for_Autonomous_Driving_CVPR_2024_paper.html)                                                                                            | CVPR 2024              | [Code](https://github.com/georghess/neurad-studio)                             | Urban    |
 
-# Reconstruction with Articulated Motion
+## Reconstruction with Articulated Motion
 ## Human Body
 ### perprint 
 | **Paper**                                                                                                                          | **Conference/Journal** | **Code**                                                      | **Type**   |
