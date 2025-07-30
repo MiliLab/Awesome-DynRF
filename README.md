@@ -158,28 +158,14 @@ which combines multiple patterns.
 | [Neurad: Neural rendering for autonomous driving](http://openaccess.thecvf.com/content/CVPR2024/html/Tonderski_NeuRAD_Neural_Rendering_for_Autonomous_Driving_CVPR_2024_paper.html)                                                                                            | CVPR 2024              | [Code](https://github.com/georghess/neurad-studio)                             | Urban    |
 
 ## 🕺 4.3 Reconstruction with Articulated Motion
-
-<div style="margin: 2rem 0; border-left: 4px solid #6e48aa; padding-left: 1.5rem;">
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <!-- ------------------------------------------------Human Body Section ------------------------------------------->
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <div style="background: #f8f5ff; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
-        <div style="display: flex; justify-content: center;">
-            <h4 style="color: #4a2d7c; margin-top: 0;">👤 Human Body</h4>
-        </div>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <!-- Content cards for human body -->
-            <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
-<p>
-
-### 📝 perprint 
+### 📝 4.3.1 Human Body-Perprint 
 | **Paper**                                                                                                                          | **Conference/Journal** | **Code**                                                      | **Type**   |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------|------------|
 | [Generalizable neural performer: Learning robust radiance fields for human novel view synthesis](https://arxiv.org/abs/2204.11798) | arXiv 2022             | [Code](https://github.com/generalizable-neural-performer/gnr) | Human Body |
 | [Splatarmor: Articulated gaussian splatting for animatable humans from monocular rgb video](https://arxiv.org/abs/2311.10812)      | arXiv 2023             |                                                               | Human Body |
 | [Bags: Building animatable gaussian splatting from a monocular video with diffusion priors](https://arxiv.org/abs/2403.11427)      | arXiv 2024             | [Code](https://github.com/Michaelszj/bags)                    | Human Body |
 
-### 📄 Paper
+### 📄 4.3.2 Human Body-Paper
 | **Paper**                                                                                                                                                                                                                                                                               | **Conference/Journal** | **Code**                                                        | **Type**            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------|---------------------|
 | [Humannerf: Freeviewpoint rendering of moving people from monocular video](http://openaccess.thecvf.com/content/CVPR2022/html/Weng_HumanNeRF_Free-Viewpoint_Rendering_of_Moving_People_From_Monocular_Video_CVPR_2022_paper.html)                                                       | CVPR 2022              | [Code](https://github.com/chungyiweng/humannerf)                | Human Body          |
@@ -221,22 +207,7 @@ which combines multiple patterns.
 | [Gomavatar: Efficient animatable human modeling from monocular video using gaussians-on-mesh](https://openaccess.thecvf.com/content/CVPR2024/html/Wen_GoMAvatar_Efficient_Animatable_Human_Modeling_from_Monocular_Video_Using_Gaussians-on-Mesh_CVPR_2024_paper.html)                  | CVPR 2024              | [Code](https://github.com/wenj/GoMAvatar)                       | Human Body          |
 | [Moda: Modeling deformable 3d objects from casual videos](https://link.springer.com/article/10.1007/s11263-024-02310-5)                                                                                                                                                                 | IJCV 2024              | [Code](https://github.com/ChaoyueSong/MoDA)                     | Human Body          |
 
-</p>
-            </div>
-        </div>
-    </div>
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------  hand Section  ------------------------------------------->
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <div style="background: #fff5f5; border-radius: 8px; padding: 1rem;">
-        <div style="display: flex; justify-content: center;">
-            <h4 style="color: #7c2d2d; margin-top: 0;">✋ Hand</h4>
-        </div>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
-<p>
-
-### 📄 Paper
+### 📄 4.3.3 Animal-Paper
 | **Paper**                                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                                 | **Type** |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------------------------------------------------|----------|
 | [3d menagerie: Modeling the 3d shape and pose of animals](http://openaccess.thecvf.com/content_cvpr_2017/html/Zuffi_3D_Menagerie_Modeling_CVPR_2017_paper.html)                                                                        | CVPR 2017              |                                                          | Animal   |
@@ -249,55 +220,23 @@ which combines multiple patterns.
 | [Common pets in 3d: Dynamic new-view synthesis of real-life deformable categories](http://openaccess.thecvf.com/content/CVPR2023/html/Sinha_Common_Pets_in_3D_Dynamic_New-View_Synthesis_of_Real-Life_Deformable_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/facebookresearch/cop3d)        | Animal   |
 | [Animal avatars: Reconstructing animatable 3D animals from casual videos](https://link.springer.com/chapter/10.1007/978-3-031-72986-7_16)                                                                                              | ECCV 2024              | [Code](https://github.com/facebookresearch/AnimalAvatar) | Animal   |
 
-</p>
-            </div>
-        </div>
-    </div>
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------ Animal Section ------------------------------------------->
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <div style="background: #f0f7ff; border-radius: 8px; padding: 1rem;">
-        <div style="display: flex; justify-content: center;">
-            <h4 style="color: #2d5c7c; margin-top: 0;">🐾 Animal</h4>
-        </div>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
-<p>
+### 📄 4.3.4 Hand-Paper
+| **Paper**                                                                                                                                                                                                                                                                      | **Conference/Journal** | **Code**                                            | **Type** |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------|----------|
+| [Lisa: Learning implicit shape and appearance of hands](http://openaccess.thecvf.com/content/CVPR2022/html/Corona_LISA_Learning_Implicit_Shape_and_Appearance_of_Hands_CVPR_2022_paper.html)                                                                                   | CVPR 2022              |                                                     | Hand     |
+| [Livehand: Real-time and photorealistic neural hand rendering](http://openaccess.thecvf.com/content/ICCV2023/html/Mundra_LiveHand_Real-time_and_Photorealistic_Neural_Hand_Rendering_ICCV_2023_paper.html)                                                                     | ICCV 2023              | [Code](https://github.com/amundra15/livehand)       | Hand     |
+| [URhand: Universal relightable hands](http://openaccess.thecvf.com/content/CVPR2024/html/Chen_URHand_Universal_Relightable_Hands_CVPR_2024_paper.html)                                                                                                                         | CVPR 2024              | [Code](https://github.com/facebookresearch/goliath) | Hand     |
+| [Relightablehands: Efficient neural relighting of articulated hand models](http://openaccess.thecvf.com/content/CVPR2023/html/Iwase_RelightableHands_Efficient_Neural_Relighting_of_Articulated_Hand_Models_CVPR_2023_paper.html)                                              | CVPR 2023              |                                                     | Hand     | 
+| [HandRT: Simultaneous hand shape and appearance reconstruction with pose tracking from monocular RGB-d video](https://ieeexplore.ieee.org/abstract/document/10938919/?casa_token=ufZHfP3HGXEAAAAA:pFNAjIELvIyYjNgF8a2gYp-srVDmbYAbMlm2MOgQhHAB5fXUzGoECJsgvEjq_zGEI75Ju8IjH8U) | TPAMI 2025             | [Code](https://github.com/pmkalshetti/handrt)       | Hand     |
+| [What’s in your hands? 3d reconstruction of generic objects in hands](http://openaccess.thecvf.com/content/CVPR2022/html/Ye_Whats_in_Your_Hands_3D_Reconstruction_of_Generic_Objects_in_CVPR_2022_paper.html)                                                                  | CVPR 2022              | [Code](https://github.com/JudyYe/shelf-sup-mesh)    | Hand     |
 
-### 📄 Paper
-| **Paper**                                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                                 | **Type** |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------------------------------------------------|----------|
-| [3d menagerie: Modeling the 3d shape and pose of animals](http://openaccess.thecvf.com/content_cvpr_2017/html/Zuffi_3D_Menagerie_Modeling_CVPR_2017_paper.html)                                                                        | CVPR 2017              |                                                          | Animal   |
-| [Who left the dogs out? 3d animal reconstruction with expectation maximization in the loop](https://link.springer.com/chapter/10.1007/978-3-030-58621-8_12)                                                                            | ECCV 2022              | [Code](https://github.com/benjiebob/WLDO)                | Animal   |
-| [Reconstructing animatable categories from videos](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_Reconstructing_Animatable_Categories_From_Videos_CVPR_2023_paper.html)                                                      | CVPR 2023              | [Code](https://github.com/gengshan-y/rac)                | Animal   |
-| [Lassie: Learning articulated shapes from sparse image ensemble via 3d part discovery](https://proceedings.neurips.cc/paper_files/paper/2022/hash/6274d57365d7a6be06e58cad30d1b9da-Abstract-Conference.html)                           | NeurIPS 2022           | [Code](https://github.com/google/hi-lassie)              | Animal   |
-| [Artemis: articulated neural pets with appearance and motion synthesis](https://arxiv.org/abs/2202.05628)                                                                                                                              | SIGGRAPH 2022          | [Code](https://github.com/HaiminLuo/Artemis)             | Animal   |
-| [Banmo: Building animatable 3d neural models from many casual videos](http://openaccess.thecvf.com/content/CVPR2022/html/Yang_BANMo_Building_Animatable_3D_Neural_Models_From_Many_Casual_Videos_CVPR_2022_paper.html)                 | CVPR 2022              | [Code](https://github.com/facebookresearch/banmo)        | Animal   |
-| [Magicpony: Learning articulated 3d animals in the wild](http://openaccess.thecvf.com/content/CVPR2023/html/Wu_MagicPony_Learning_Articulated_3D_Animals_in_the_Wild_CVPR_2023_paper.html)                                             | CVPR 2023              | [Code](https://github.com/elliottwu/MagicPony)           | Animal   |
-| [Common pets in 3d: Dynamic new-view synthesis of real-life deformable categories](http://openaccess.thecvf.com/content/CVPR2023/html/Sinha_Common_Pets_in_3D_Dynamic_New-View_Synthesis_of_Real-Life_Deformable_CVPR_2023_paper.html) | CVPR 2023              | [Code](https://github.com/facebookresearch/cop3d)        | Animal   |
-| [Animal avatars: Reconstructing animatable 3D animals from casual videos](https://link.springer.com/chapter/10.1007/978-3-031-72986-7_16)                                                                                              | ECCV 2024              | [Code](https://github.com/facebookresearch/AnimalAvatar) | Animal   |
 
-</p>
-            </div>
-        </div>
-    </div>
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <!------------------------------------------------------ Other Section  ------------------------------------------->
-    <!-- -------------------------------------------------------------------------------------------------------------->
-    <div style="background: #f5fff7; border-radius: 8px; padding: 1rem;">
-        <div style="display: flex; justify-content: center;">
-            <h4 style="color: #2d7c3e; margin-top: 0;">📦 Other Objects</h4>
-        </div>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
-<p>
-
-### 📝 perprint
+### 📝 4.3.5 Object-Perprint
 | **Paper**                                                                                                                       | **Conference/Journal** | **Code**                                  | **Type** |
 |---------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------|----------|
 | [Artgs: Building interactable replicas of complex articulated objects via gaussian splatting](https://arxiv.org/abs/2502.19459) | arXiv 2025             | [Code](https://github.com/YuLiu-LY/ArtGS) | Object   |
 
-### 📄 Paper
+### 📄 4.3.6 Object-Paper
 | **Paper**                                                                                                                                                                                                                                | **Conference/Journal** | **Code**                                      | **Type** |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------|----------|
 | [Clanerf: Category-level articulated neural radiance field](https://ieeexplore.ieee.org/abstract/document/9812272/?casa_token=6_rU_yhrMM4AAAAA:QSMnTVBIHNt2TQIhGn7ISTYTSTjT-y9ceMgpusOT4qS3ojid4X0mSxCkhun2vgpPFpvMXmAzRIGnaQ)           | ICRA 2022              |                                               | Object   |
@@ -305,14 +244,9 @@ which combines multiple patterns.
 | [Leia: Latent view-invariant embeddings for implicit 3d articulation](https://link.springer.com/chapter/10.1007/978-3-031-72640-8_12)                                                                                                    | ECCV 2024              |                                               | Object   |
 | [Reacto: Reconstructing articulated objects from a single video](http://openaccess.thecvf.com/content/CVPR2024/html/Song_REACTO_Reconstructing_Articulated_Objects_from_a_Single_Video_CVPR_2024_paper.html)                             | CVPR 2024              | [Code](https://github.com/ChaoyueSong/REACTO) | Object   |
 
-</p>
-            </div>
-        </div>
-    </div>
-</div>
 
+## 🤖 4.4 Reconstruction with Nor-rigid Motion
 
-# Reconstruction with Nor-rigid Motion
 ## 4D Spacetime
 ### Paper
 | **Paper**                                                                                                                                                                                                 | **Conference/Journal** | **Code**                                                    | **Type**       |
