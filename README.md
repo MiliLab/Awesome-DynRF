@@ -16,13 +16,10 @@
 More content and details can be found in our Survey Paper: [Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field](https://arxiv.org/abs/2505.10049).
 
 # 🔍 Contents
-[1. Abstract](#-1-Abstract)
-
-[2. Taxonomy](#-2-taxonomy)
-
-[3. Benchmark](#benchmark)
-
-[4. Paper List](#paper-list)
+* [1. Abstract](#-1-Abstract)
+* [2. Taxonomy](#-2-taxonomy)
+* [3. Benchmark](#benchmark)
+* [4. Paper List](#paper-list)
 
 
 # 📌 1. Abstract
@@ -76,51 +73,39 @@ which combines multiple patterns.
 </div>
 
 # ⚡ 3. Benchmark
-# Dataset List  
+| Datasets              | Year | Inputs                                                             | Additional Annotations                                                            | Motion                  |
+|-----------------------|------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------|
+| 🟥 Tanks and Temples  | 2017 | Monocular videos                                                   | 3D surface geometry                                                               | Non-rigid Motion        |
+| 🟥 CMU Panoptic       | 2017 | Multi-view videos, 480 VGA camera views, 10 RGB-D sensors          | 3D body pose, 3D facial landmarks, Transcripts + speaker ID                       | Non-rigid Motion        |
+| 🟥 D-NeRF             | 2021 | Monocular videos                                                   | -                                                                                 | Non-rigid Motion        |
+| 🟥 Plenoptic          | 2022 | Multi-view videos                                                  | Depth maps, RGB images, and calibration data                                      | Non-rigid Motion        |
+| 🟥 Tensor4d           | 2023 | Multi-view videos captured by RGB cameras                          | -                                                                                 | Non-rigid Motion        |
+| 🟥 Epic Fields        | 2024 | Monocular videos                                                   | Semantic annotations for actions and objects, masks of hands and active objects   | Non-rigid Motion        |
+| 🟨 KITTI              | 2012 | Stereo images                                                      | Stereo images, optical flow, visual odometry, 3D object detection, 3D tracking    | Rigid Motion            |
+| 🟨 nuScenes           | 2020 | 1 LiDAR, 5 RADAR, 6 cameras, IMU, and GPS                          | 3D bounding boxes, semantic categories, object attributes for 23 object classes   | Rigid Motion            |
+| 🟨 Waymo              | 2020 | High-resolution sensor data (LiDAR, camera, radar)                 | 3D semantic segmentation labels, object trajectories, 3D maps                     | Rigid Motion            |
+| 🟨 KITTI-360          | 2022 | Fisheye images, Pushbroom laser scans, Geo-localized vehicle poses | Semantic instance annotations in 2D and 3D Accurate localization                  | Rigid Motion            |
+| 🟨 Virtual KITTI 2    | 2020 | RGB images                                                         | Semantic segmentation, instance segmentation, depth, optical flow, and scene flow | Rigid Motion            |
+| 🟨 NeRF On-The-Road   | 2023 | Subset of Waymo open Dataset (dynamic driving scenes)              | Scene geometry, appearance, motion, and semantics via self-supervision            | Rigid Motion            |
+| 🟨 Argoverse NVS      | 2024 | High-res images from 7 ring cameras, 2 stereo cameras, LiDAR       | 3D cuboid annotations for 26 object categories, map-aligned poses, and HD maps    | Rigid Motion            |
+| 🟦 RobustNeRF Dataset | 2023 | Multi-view videos with dynamic distractors                         | Distractors modeled as outliers                                                   | Dynamic Noise           |
+| 🟩 People-Snapshot    | 2018 | Monocular videos                                                   | 3D body models, textures, and animation skeletons                                 | Articulated & Non-rigid |
+| 🟩 DynaCap            | 2021 | Multi-view videos                                                  | -                                                                                 | Articulated & Non-rigid |
+| 🟩 ZJU-Mocap          | 2021 | Multi-view videos                                                  | -                                                                                 | Articulated & Non-rigid |
+| 🟩 Neuman             | 2022 | Monocular videos                                                   | Human pose, shape, masks, camera poses, sparse scene model, and depth maps        | Articulated & Non-rigid |
+| 🟩 THuman4            | 2022 | Multi-view videos                                                  | Foreground segmentation, calibration data, and SMPL-X fitting                     | Articulated & Non-rigid |
+| 🟩 ActorsHQ           | 2023 | Multi-view videos from 160 synchronized cameras                    | Axis-aligned bounding boxes, occupancy grids, Alembic format meshes               | Articulated & Non-rigid |
+| 🟩 CoP3D              | 2023 | Monocular casual videos of different cats and dogs                 | Camera parameters and object masks                                                | Articulated & Non-rigid |
 
-**Note:** This table needs to be supplemented according to the type of exercise, and add references  
+# 📜 4 Paper Lists
+* [4.1 Survey](#41-survey)
+* [Reconstruction with Rigid Motion](#reconstruction-with-rigid-motion)
+* [Reconstruction with Articulated Motion](#reconstruction-with-articulated-motion)
+* [Reconstruction with Nor-rigid Motion](#reconstruction-with-nor-rigid-motion)
+* [Reconstruction with Hybrid Motion](#reconstructing-with-hybrid-motion)
 
-| Datasets                     | Year | Inputs                                                                 | Additional Annotations                                                                 | Motion                     |
-|------------------------------|------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------|
-| 🟥 Tanks and Temples [1]      | 2017 | Monocular videos                                                      | 3D surface geometry                                                                   | Non-rigid Motion           |
-| 🟥 CMU Panoptic [2][3][4]     | 2017 | Multi-view videos, 480 VGA camera views, 10 RGB-D sensors             | 3D body pose, 3D facial landmarks, Transcripts + speaker ID                           | Non-rigid Motion           |
-| 🟥 D-NeRF [5]                 | 2021 | Monocular videos                                                      | -                                                                                     | Non-rigid Motion           |
-| 🟥 Plenoptic [6]              | 2022 | Multi-view videos                                                     | Depth maps, RGB images, and calibration data                                          | Non-rigid Motion           |
-| 🟥 Tensor4d [7]               | 2023 | Multi-view videos captured by RGB cameras                             | -                                                                                     | Non-rigid Motion           |
-| 🟥 Epic Fields [8]            | 2024 | Monocular videos                                                      | Semantic annotations for actions and objects, masks of hands and active objects       | Non-rigid Motion           |
-| 🟨 KITTI [9]                  | 2012 | Stereo images                                                         | Stereo images, optical flow, visual odometry, 3D object detection, 3D tracking        | Rigid Motion               |
-| 🟨 nuScenes [10]              | 2020 | 1 LiDAR, 5 RADAR, 6 cameras, IMU, and GPS                             | 3D bounding boxes, semantic categories, object attributes for 23 object classes      | Rigid Motion               |
-| 🟨 Waymo [11]                 | 2020 | High-resolution sensor data (LiDAR, camera, radar)                    | 3D semantic segmentation labels, object trajectories, 3D maps                        | Rigid Motion               |
-| 🟨 KITTI-360 [12]             | 2022 | Fisheye images, Pushbroom laser scans, Geo-localized vehicle poses    | Semantic instance annotations in 2D and 3D Accurate localization                     | Rigid Motion               |
-| 🟨 Virtual KITTI 2 [13]       | 2020 | RGB images                                                            | Semantic segmentation, instance segmentation, depth, optical flow, and scene flow    | Rigid Motion               |
-| 🟨 NeRF On-The-Road [14][11]  | 2023 | Subset of Waymo open Dataset (dynamic driving scenes)                 | Scene geometry, appearance, motion, and semantics via self-supervision               | Rigid Motion               |
-| 🟨 Argoverse NVS [15][16]     | 2024 | High-res images from 7 ring cameras, 2 stereo cameras, LiDAR          | 3D cuboid annotations for 26 object categories, map-aligned poses, and HD maps       | Rigid Motion               |
-| 🟦 RobustNeRF Dataset [17]    | 2023 | Multi-view videos with dynamic distractors                            | Distractors modeled as outliers                                                      | Dynamic Noise              |
-| 🟩 People-Snapshot [18]       | 2018 | Monocular videos                                                      | 3D body models, textures, and animation skeletons                                    | Articulated & Non-rigid    |
-| 🟩 DynaCap [19]               | 2021 | Multi-view videos                                                     | -                                                                                     | Articulated & Non-rigid    |
-| 🟩 ZJU-Mocap [20]             | 2021 | Multi-view videos                                                     | -                                                                                     | Articulated & Non-rigid    |
-| 🟩 Neuman [21]                | 2022 | Monocular videos                                                      | Human pose, shape, masks, camera poses, sparse scene model, and depth maps           | Articulated & Non-rigid    |
-| 🟩 THuman4 [22]               | 2022 | Multi-view videos                                                     | Foreground segmentation, calibration data, and SMPL-X fitting                         | Articulated & Non-rigid    |
-| 🟩 ActorsHQ [23]              | 2023 | Multi-view videos from 160 synchronized cameras                       | Axis-aligned bounding boxes, occupancy grids, Alembic format meshes                  | Articulated & Non-rigid    |
-| 🟩 CoP3D [24]                 | 2023 | Monocular casual videos of different cats and dogs                    | Camera parameters and object masks                                                   | Articulated & Non-rigid    |
-
-**References:**  
-[1] [knapitsch2017tanks], [2] [Joo_2015_ICCV], [3] [Joo_2017_TPAMI], [4] [Simon_2017_CVPR], [5] [pumarola2021d], [6] [li2022neural], [7] [shao2023tensor4d], [8] [tschernezki2024epic], [9] [geiger2012we], [10] [caesar2020nuscenes], [11] [sun2020scalability], [12] [liao2022kitti], [13] [cabon2020virtual], [14] [yang2023emernerf], [15] [fischer2024multi], [16] [wilson2023argoverse], [17] [sabour2023robustnerf], [18] [alldieck2018video], [19] [habermann2021real], [20] [peng2021neural], [21] [jiang2022neuman], [22] [zheng2022structured], [23] [icsik2023humanrf], [24] [sinha2023common]
-
-# 📜 4. Paper Lists
-## 4.1 Framework
-[Survey](#survey)
-
-[Reconstruction with Rigid Motion](#reconstruction-with-rigid-motion)
-
-[Reconstruction with Articulated Motion](#reconstruction-with-articulated-motion)
-
-[Reconstruction with Nor-rigid Motion](#reconstruction-with-nor-rigid-motion)
-
-[Reconstruction with Hybrid Motion](#reconstructing-with-hybrid-motion)
-
-## Survey
-### perprint
+## 📚 4.1 Survey
+### 📝 4.1.1 perprint
 | **Paper**                                                                                                                                         | **Conference/Journal** | **Code** | **Type** |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|----------|
 | [Differentiable rendering: A survey](https://arxiv.org/abs/2006.12057)                                                                            | arXiv2020              |          | Survey   |
@@ -136,7 +121,7 @@ which combines multiple patterns.
 | [NeRF in robotics: A survey](https://arxiv.org/abs/2405.01333)                                                                                    | arXiv2024              |          | Survey   |
 | [Neural Fields in Robotics: A Survey](https://arxiv.org/abs/2410.20220)                                                                           | arXiv2024              |          | Survey   |
 
-### Paper
+### 📄 4.1.2 Paper
 | **Paper**                                                                                                                                                                                                                                                                                      | **Conference/Journal**          | **Code** | **Type** |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|----------|----------|
 | [Neural fields in visual computing and beyond](https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14505)                                                                                                                                                                                      | Computer Graphics Forum 2022    |          | Survey   |
@@ -151,13 +136,13 @@ which combines multiple patterns.
 | [Neural radiance fields in the industrial and robotics domain: Applications, research opportunities and use cases](https://www.sciencedirect.com/science/article/pii/S0736584524000978?casa_token=IbEL6IFsBrcAAAAA:N1ijHI5IXgjmtYh0WVADDM4OBXoHsdAMhef9VZohHdghCTMo-8QBBfCvPgbASBFib8yr_ywZRg) | RCIM 2024                       |          | Survey   |
 | [A Brief Review on Differentiable Rendering: Recent Advances and Challenges](https://www.mdpi.com/2079-9292/13/17/3546)                                                                                                                                                                        | Electronics 2024                |          | Survey   |
 
-## Reconstruction with Rigid Motion
-### perprint
+## 🏗️ 4.2 Reconstruction with Rigid Motion
+### 📝 4.2.1 perprint
 | **Paper**                                                                                                                                   | **Conference/Journal** | **Code** | **Type** |
 |---------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------|----------|
 | [Prosgnerf: Progressive dynamic neural scene graph with frequency modulated auto-encoder in urban scenes](https://arxiv.org/abs/2312.09076) | Arxiv 2023             |          | Urban    |
 
-### Paper
+### 📄 4.2.2 Paper
 | **Paper**                                                                                                                                                                                                                                                                      | **Conference/Journal** | **Code**                                                                       | **Type** |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------------------------|----------|
 | [Street gaussians: Modeling dynamic urban scenes with gaussian splatting](https://arxiv.org/abs/2401.01339)                                                                                                                                                                    | ECCV 2024              | [Code](https://github.com/zju3dv/street_gaussians)                             | Urban    |
@@ -172,9 +157,19 @@ which combines multiple patterns.
 | [Unisim: A neural closedloop sensor simulator](http://openaccess.thecvf.com/content/CVPR2023/html/Yang_UniSim_A_Neural_Closed-Loop_Sensor_Simulator_CVPR_2023_paper.html)                                                                                                      | CVPR 2023              | [Project Site](https://waabi.ai/unisim/)                                       | Urban    |
 | [Neurad: Neural rendering for autonomous driving](http://openaccess.thecvf.com/content/CVPR2024/html/Tonderski_NeuRAD_Neural_Rendering_for_Autonomous_Driving_CVPR_2024_paper.html)                                                                                            | CVPR 2024              | [Code](https://github.com/georghess/neurad-studio)                             | Urban    |
 
-## Reconstruction with Articulated Motion
-## Human Body
-### perprint 
+## 🕺 4.3 Reconstruction with Articulated Motion
+
+<div style="margin: 2rem 0; border-left: 4px solid #6e48aa; padding-left: 1.5rem;">
+
+  <!-- Human Body Section -->
+  <div style="background: #f8f5ff; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+    <h4 style="color: #4a2d7c; margin-top: 0;">👤 Human Body</h4>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <!-- Content cards for human body -->
+      <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
+        <p>
+
+### 📝 perprint 
 | **Paper**                                                                                                                          | **Conference/Journal** | **Code**                                                      | **Type**   |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------|------------|
 | [Generalizable neural performer: Learning robust radiance fields for human novel view synthesis](https://arxiv.org/abs/2204.11798) | arXiv 2022             | [Code](https://github.com/generalizable-neural-performer/gnr) | Human Body |
@@ -182,7 +177,81 @@ which combines multiple patterns.
 | [Bags: Building animatable gaussian splatting from a monocular video with diffusion priors](https://arxiv.org/abs/2403.11427)      | arXiv 2024             | [Code](https://github.com/Michaelszj/bags)                    | Human Body |
 
 
-### Paper
+### 📄 Paper
+| **Paper**                                                                                                                                                                                                                                                                               | **Conference/Journal** | **Code**                                                        | **Type**            |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------|---------------------|
+| [Humannerf: Freeviewpoint rendering of moving people from monocular video](http://openaccess.thecvf.com/content/CVPR2022/html/Weng_HumanNeRF_Free-Viewpoint_Rendering_of_Moving_People_From_Monocular_Video_CVPR_2022_paper.html)                                                       | CVPR 2022              | [Code](https://github.com/chungyiweng/humannerf)                | Human Body          |
+| [Animatable neural radiance fields for modeling dynamic human bodies](https://openaccess.thecvf.com/content/ICCV2021/html/Peng_Animatable_Neural_Radiance_Fields_for_Modeling_Dynamic_Human_Bodies_ICCV_2021_paper.html?ref=https://githubhelp.com)                                     | CVPR 2021              | [Code](https://github.com/zju3dv/animatable_nerf)               | Human Body          |
+| [Neural human performer: Learning generalizable radiance fields for human performance rendering](https://proceedings.neurips.cc/paper/2021/hash/cf866614b6b18cda13fe699a3a65661b-Abstract.html)                                                                                         | NeurIPS 2021           | [Code](https://github.com/YoungJoongUNC/Neural_Human_Performer) | Human Body          |
+| [Vid2avatar: 3d avatar reconstruction from videos in the wild via self-supervised scene decomposition](http://openaccess.thecvf.com/content/CVPR2023/html/Guo_Vid2Avatar_3D_Avatar_Reconstruction_From_Videos_in_the_Wild_via_CVPR_2023_paper.html)                                     | CVPR 2023              |                                                                 | Human Body          |
+| [Npc: Neural point characters from video](http://openaccess.thecvf.com/content/ICCV2023/html/Su_NPC_Neural_Point_Characters_from_Video_ICCV_2023_paper.html)                                                                                                                            | ICCV 2023              | [Code](https://github.com/LemonATsu/NPC-pytorch)                | Human Body          |
+| [Tava: Template-free animatable volumetric actors](https://arxiv.org/abs/2206.08929)                                                                                                                                                                                                    | ECCV 2022              | [Code](https://github.com/facebookresearch/tava)                | Human Body          |
+| [Neural actor: Neural free-view synthesis of human actors with pose control](https://dl.acm.org/doi/abs/10.1145/3478513.3480528)                                                                                                                                                        | TOG 2021               |                                                                 | Human Body          |
+| [Neural articulated radiance field](http://openaccess.thecvf.com/content/ICCV2021/html/Noguchi_Neural_Articulated_Radiance_Field_ICCV_2021_paper.html)                                                                                                                                  | ICCV 2021              | [Code](https://github.com/nogu-atsu/NARF)                       | Human Body          |
+| [Neural human performer: Learning generalizable radiance fields for human performance rendering](https://proceedings.neurips.cc/paper/2021/hash/cf866614b6b18cda13fe699a3a65661b-Abstract.html)                                                                                         | NeurIPS 2021           | [Code](https://github.com/YoungJoongUNC/Neural_Human_Performer) | Human Body          |
+| [Monohuman: Animatable human neural field from monocular video](http://openaccess.thecvf.com/content/CVPR2023/html/Yu_MonoHuman_Animatable_Human_Neural_Field_From_Monocular_Video_CVPR_2023_paper.html)                                                                                | CVPR 2023              | [Code](https://github.com/Yzmblog/MonoHuman)                    | Human Body          |
+| [Structured local radiance fields for human avatar modeling ](http://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Structured_Local_Radiance_Fields_for_Human_Avatar_Modeling_CVPR_2022_paper.html)                                                                                 | CVPR 2022              |                                                                 | Human Body          |
+| [Instant-NVR: Instant neural volumetric rendering for human-object interactions from monocular RGBD stream](http://openaccess.thecvf.com/content/CVPR2023/html/Jiang_Instant-NVR_Instant_Neural_Volumetric_Rendering_for_Human-Object_Interactions_From_Monocular_CVPR_2023_paper.html) | CVPR 2023              |                                                                 | Human Body          |
+| [Instantavatar: Learning avatars from monocular video in 60 seconds](http://openaccess.thecvf.com/content/CVPR2023/html/Jiang_InstantAvatar_Learning_Avatars_From_Monocular_Video_in_60_Seconds_CVPR_2023_paper.html)                                                                   | CVPR 2023              | [Code](https://github.com/tijiang13/InstantAvatar)              | Human Body          |
+| [Snarf: Differentiable forward skinning for animating non-rigid neural implicit shapes](http://openaccess.thecvf.com/content/ICCV2021/html/Chen_SNARF_Differentiable_Forward_Skinning_for_Animating_Non-Rigid_Neural_Implicit_Shapes_ICCV_2021_paper.html)                              | ICCV 2021              |                                                                 | Human Body          |
+| [Fast-snarf: A fast deformer for articulated neural fields](https://ieeexplore.ieee.org/abstract/document/10112633/)                                                                                                                                                                    | TPAMI 2023             | [Code](https://github.com/xuchen-ethz/fast-snarf)               | Human Body          |
+| [Pina: Learning a personalized implicit neural avatar from a single rgb-d video sequence](http://openaccess.thecvf.com/content/CVPR2022/html/Dong_PINA_Learning_a_Personalized_Implicit_Neural_Avatar_From_a_Single_CVPR_2022_paper.html)                                               | CVPR 2022              |                                                                 | Human Body          |
+| [X-avatar: Expressive human avatars](https://openaccess.thecvf.com/content/CVPR2023/html/Shen_X-Avatar_Expressive_Human_Avatars_CVPR_2023_paper.html)                                                                                                                                   | CVPR 2023              | [Code](https://github.com/Skype-line/X-Avatar)                  | Human Body          |
+| [Pixel-aligned volumetric avatars](http://openaccess.thecvf.com/content/CVPR2021/html/Raj_Pixel-Aligned_Volumetric_Avatars_CVPR_2021_paper.html)                                                                                                                                        | CVPR 2021              |                                                                 | Human Head          |
+| [4k4d: Real-time 4d view synthesis at 4k resolution](https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_4K4D_Real-Time_4D_View_Synthesis_at_4K_Resolution_CVPR_2024_paper.pdf)                                                                                                    | CVPR 2024              |                                                                 | Human Performance   |
+| [Real-time deep dynamic characters](https://arxiv.org/pdf/2105.01794)                                                                                                                                                                                                                   | ACM TOG 2021           |                                                                 | Human Performance   |
+| [A-nerf: Articulated neural radiance fields for learning human shape, appearance, and pose](https://proceedings.neurips.cc/paper/2021/hash/65fc9fb4897a89789352e211ca2d398f-Abstract.html)                                                                                              | NeurIPS 2021           | [Code](https://github.com/LemonATsu/A-NeRF)                     | Human Body          |
+| [Neural articulated radiance field](http://openaccess.thecvf.com/content/ICCV2021/html/Noguchi_Neural_Articulated_Radiance_Field_ICCV_2021_paper.html)                                                                                                                                  | ICCV 2021              | [Code](https://github.com/nogu-atsu/NARF)                       | Human Body          |
+| [Nasa neural articulated shape approximation](https://scribblethink.org/Work/Pdfs/deng_NasaNeuralArticulatedShapeApproximation.pdf)                                                                                                                                                     |                        |                                                                 |                     |
+| [Lasr: Learning articulated shape reconstruction from a monocular video](http://openaccess.thecvf.com/content/CVPR2021/html/Yang_LASR_Learning_Articulated_Shape_Reconstruction_From_a_Monocular_Video_CVPR_2021_paper.html)                                                            | CVPR 2021              | [Code](https://github.com/google/lasr)                          | Human Body          |
+| [Viser: Video-specific surface embeddings for articulated 3d shape reconstruction](https://proceedings.neurips.cc/paper/2021/hash/a11f9e533f28593768ebf87075ab34f2-Abstract.html)                                                                                                       | NeurIPS 2021           | [Code](https://github.com/gengshan-y/viser)                     | Human Body          |
+| **👆 NeRF-based**                                                                                                                                                                                                                                                                       | **👇 3DGS-based**      |                                                                 |                     |
+| [Hugs: Human gaussian splats](http://openaccess.thecvf.com/content/CVPR2024/html/Kocabas_HUGS_Human_Gaussian_Splats_CVPR_2024_paper.html)                                                                                                                                               | CVPR 2024              | [Code](https://github.com/apple/ml-hugs)                        | Human Body          |
+| [Gart: Gaussian articulated template models](https://openaccess.thecvf.com/content/CVPR2024/html/Lei_GART_Gaussian_Articulated_Template_Models_CVPR_2024_paper.html)                                                                                                                    | CVPR 2024              | [Code](https://github.com/JiahuiLei/GART)                       | Human Body          |
+| [Expressive wholebody 3D gaussian avatar](https://fq.pkwyx.com/default/https/www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05715.pdf)                                                                                                                                                | ECCV 2024              | [Code](https://github.com/mks0601/ExAvatar_RELEASE)             | Human Body and Face |
+| [Gauhuman: Articulated gaussian splatting from monocular human videos](http://openaccess.thecvf.com/content/CVPR2024/html/Hu_GauHuman_Articulated_Gaussian_Splatting_from_Monocular_Human_Videos_CVPR_2024_paper.html)                                                                  | CVPR 2024              | [Code](https://github.com/skhu101/GauHuman)                     | Human Body          |
+| [Animatable gaussians: Learning pose-dependent gaussian maps for highfidelity human avatar modeling](http://openaccess.thecvf.com/content/CVPR2024/html/Li_Animatable_Gaussians_Learning_Pose-dependent_Gaussian_Maps_for_High-fidelity_Human_Avatar_CVPR_2024_paper.html)              | CVPR 2024              | [Code](https://github.com/lizhe00/AnimatableGaussians)          | Human Body          |
+| [Ash: Animatable gaussian splats for efficient and photoreal human rendering](http://openaccess.thecvf.com/content/CVPR2024/html/Pang_ASH_Animatable_Gaussian_Splats_for_Efficient_and_Photoreal_Human_Rendering_CVPR_2024_paper.html)                                                  | CVPR 2024              | [Code](https://github.com/kv2000/ASH)                           | Human Body          |
+| [3dgs-avatar: Animatable avatars via deformable 3d gaussian splatting](http://openaccess.thecvf.com/content/CVPR2024/html/Qian_3DGS-Avatar_Animatable_Avatars_via_Deformable_3D_Gaussian_Splatting_CVPR_2024_paper.html)                                                                | CVPR 2024              | [Code](https://github.com/mikeqzy/3dgs-avatar-release)          | Human Body          |
+| [Animatable gaussians: Learning pose-dependent gaussian maps for highfidelity human avatar modeling](http://openaccess.thecvf.com/content/CVPR2024/html/Li_Animatable_Gaussians_Learning_Pose-dependent_Gaussian_Maps_for_High-fidelity_Human_Avatar_CVPR_2024_paper.html)              | CVPR 2024              | [Code](https://github.com/lizhe00/AnimatableGaussians)          | Human Body          |
+| [Gaussianavatar: Towards realistic human avatar modeling from a single video via animatable 3d gaussians](http://openaccess.thecvf.com/content/CVPR2024/html/Hu_GaussianAvatar_Towards_Realistic_Human_Avatar_Modeling_from_a_Single_Video_CVPR_2024_paper.html)                        | CVPR 2024              | [Code](https://github.com/aipixel/GaussianAvatar)               | Human Body          |
+| [Splattingavatar: Realistic real-time human avatars with mesh-embedded gaussian splatting](http://openaccess.thecvf.com/content/CVPR2024/html/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.html)                        | CVPR 2024              | [Code](https://github.com/initialneil/SplattingAvatar)          | Human Body and Face |
+| [Gomavatar: Efficient animatable human modeling from monocular video using gaussians-on-mesh](https://openaccess.thecvf.com/content/CVPR2024/html/Wen_GoMAvatar_Efficient_Animatable_Human_Modeling_from_Monocular_Video_Using_Gaussians-on-Mesh_CVPR_2024_paper.html)                  | CVPR 2024              | [Code](https://github.com/wenj/GoMAvatar)                       | Human Body          |
+| [Moda: Modeling deformable 3d objects from casual videos](https://link.springer.com/article/10.1007/s11263-024-02310-5)                                                                                                                                                                 | IJCV 2024              | [Code](https://github.com/ChaoyueSong/MoDA)                     | Human Body          |
+
+</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <!-- Animal Section -->
+  <div style="background: #f0f7ff; border-radius: 8px; padding: 1rem;">
+    <h4 style="color: #2d5c7c; margin-top: 0;">🐾 Animal</h4>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <!-- Content cards for animal -->
+      <div style="flex: 1; min-width: 200px; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1)">
+        <h5 style="margin-top: 0;">Method 1</h5>
+        <p>Description...</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</div>
+
+## 🕺 4.3 Reconstruction with Articulated Motion
+
+Human Body
+
+### 📝 perprint 
+| **Paper**                                                                                                                          | **Conference/Journal** | **Code**                                                      | **Type**   |
+|------------------------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------|------------|
+| [Generalizable neural performer: Learning robust radiance fields for human novel view synthesis](https://arxiv.org/abs/2204.11798) | arXiv 2022             | [Code](https://github.com/generalizable-neural-performer/gnr) | Human Body |
+| [Splatarmor: Articulated gaussian splatting for animatable humans from monocular rgb video](https://arxiv.org/abs/2311.10812)      | arXiv 2023             |                                                               | Human Body |
+| [Bags: Building animatable gaussian splatting from a monocular video with diffusion priors](https://arxiv.org/abs/2403.11427)      | arXiv 2024             | [Code](https://github.com/Michaelszj/bags)                    | Human Body |
+
+
+### 📄 Paper
 | **Paper**                                                                                                                                                                                                                                                                               | **Conference/Journal** | **Code**                                                        | **Type**            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------------------|---------------------|
 | [Humannerf: Freeviewpoint rendering of moving people from monocular video](http://openaccess.thecvf.com/content/CVPR2022/html/Weng_HumanNeRF_Free-Viewpoint_Rendering_of_Moving_People_From_Monocular_Video_CVPR_2022_paper.html)                                                       | CVPR 2022              | [Code](https://github.com/chungyiweng/humannerf)                | Human Body          |
