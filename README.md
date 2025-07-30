@@ -16,11 +16,15 @@
 More content and details can be found in our Survey Paper: [Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field](https://arxiv.org/abs/2505.10049).
 
 # 🔍 Contents
-* [1. Abstract](#-1-Abstract)
-* [2. Taxonomy](#-2-taxonomy)
-* [3. Benchmark](#benchmark)
-* [4. Paper List](#paper-list)
-
+1. [Abstract](#-1-abstract)
+2. [Taxonomy](#-2-taxonomy)
+3. [Benchmark](#-3-benchmark)
+4. [Paper Lists](#-4-paper-lists)
+    * [4.1 Survey](#-41-survey)
+    * [4.2 Reconstruction with Rigid Motion](#-42-reconstruction-with-rigid-motion)
+    * [4.3 Reconstruction with Articulated Motion](#-43-reconstruction-with-articulated-motion)
+    * [4.4 Reconstruction with Nor-rigid Motion](#-44-reconstruction-with-nor-rigid-motion)
+5. [Citation]()
 
 # 📌 1. Abstract
 Dynamic scene representation and reconstruction have undergone transformative advances in recent years, catalyzed by 
@@ -38,7 +42,6 @@ examination of persistent challenges and promising research directions. By provi
 we aim to establish a definitive reference for researchers entering this rapidly evolving field while offering 
 experienced practitioners a systematic understanding of both conceptual principles and practical frontiers in dynamic 
 scene reconstruction.
-
 
 # 📚 2. Taxonomy
 ## 2.1 Motion Types
@@ -97,13 +100,7 @@ which combines multiple patterns.
 | 🟩 ActorsHQ           | 2023 | Multi-view videos from 160 synchronized cameras                    | Axis-aligned bounding boxes, occupancy grids, Alembic format meshes               | Articulated & Non-rigid |
 | 🟩 CoP3D              | 2023 | Monocular casual videos of different cats and dogs                 | Camera parameters and object masks                                                | Articulated & Non-rigid |
 
-# 📜 4 Paper Lists
-* [4.1 Survey](#41-survey)
-* [Reconstruction with Rigid Motion](#reconstruction-with-rigid-motion)
-* [Reconstruction with Articulated Motion](#reconstruction-with-articulated-motion)
-* [Reconstruction with Nor-rigid Motion](#reconstruction-with-nor-rigid-motion)
-* [Reconstruction with Hybrid Motion](#reconstructing-with-hybrid-motion)
-
+# 📜 4. Paper Lists
 ## 📚 4.1 Survey
 ### 📝 4.1.1 perprint
 | **Paper**                                                                                                                                         | **Conference/Journal** | **Code** | **Type** |
@@ -247,8 +244,7 @@ which combines multiple patterns.
 
 ## 🤖 4.4 Reconstruction with Nor-rigid Motion
 
-## 4D Spacetime
-### Paper
+### 📄 4.4.1 4D Spacetime-Paper
 | **Paper**                                                                                                                                                                                                 | **Conference/Journal** | **Code**                                                    | **Type**       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
 | [Space-time neural irradiance fields for free-viewpoint video](http://openaccess.thecvf.com/content/CVPR2021/html/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.html) | CVPR 2021              | [Code](https://github.com/wxian3/video-nerf)                | General Motion |
@@ -259,8 +255,7 @@ which combines multiple patterns.
 | [Neural surface reconstruction of dynamic scenes with monocular rgbd camera](https://proceedings.neurips.cc/paper_files/paper/2022/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html)        | NeurIPS 2022           | [Code](https://ustc3dv.github.io/ndr/)                      | Object         |
 
 
-## Canonical Space with Deformation Field
-### Paper
+### 📄 4.4.2 Canonical Space with Deformation Field-Paper
 | **Paper**                                                                                                                                                                                                                                         | **Conference/Journal** | **Code**                                                    | **Type**       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
 | [D-nerf: Neural radiance fields for dynamic scenes](https://openaccess.thecvf.com/content/CVPR2021/html/Pumarola_D-NeRF_Neural_Radiance_Fields_for_Dynamic_Scenes_CVPR_2021_paper.html?ref=labelbox.ghost.io)                                     | CVPR 2021              | [Code](https://github.com/albertpumarola/D-NeRF)            | Object         |
@@ -272,8 +267,7 @@ which combines multiple patterns.
 | [Neural surface reconstruction of dynamic scenes with monocular rgbd camera](https://proceedings.neurips.cc/paper_files/paper/2022/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html)                                                | NeurIPS 2022           | [Code](https://github.com/USTC3DV/NDR-code)                 | Object         |
 
 
-## Frame-to-Frame Flow Field
-### Paper
+### 📄 4.4.3 Frame-to-Frame Flow Field-Paper
 | **Paper**                                                                                                                                                                                                                                      | **Conference/Journal** | **Code**                                                   | **Type**       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|------------------------------------------------------------|----------------|
 | [Dynamic view synthesis from dynamic monocular video](https://openaccess.thecvf.com/content/ICCV2021/html/Gao_Dynamic_View_Synthesis_From_Dynamic_Monocular_Video_ICCV_2021_paper.html?ref=https://githubhelp.com)                             | ICCV 2021              | [Code](https://github.com/gaochen315/DynamicNeRF)          | General Motion |
@@ -286,20 +280,20 @@ which combines multiple patterns.
 | [Dynpoint: Dynamic neural point for view synthesis](https://proceedings.neurips.cc/paper_files/paper/2023/hash/dbdc7a9779ce0278c6e43b62c7e97759-Abstract-Conference.html)                                                                      | CVPR 2023              | [code](https://github.com/kaichen-z/DynPoint)              | General Motion |
 
 
-## Point Tracking
-### Arxiv
+
+### 📝 4.4.4 Point Tracking-Perprint
 | **Paper**                                                                                     | **Conference/Journal** | **Code** | **Type** |
 |-----------------------------------------------------------------------------------------------|------------------------|----------|----------|
 | [Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994) | arXiv 2021             | [Code]   |          |
 
-### Paper
+### 📄 4.4.5 Point Tracking-Paper
 | **Paper**                                                                                                                      | **Conference/Journal** | **Code**                                                     | **Type**       |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------|----------------|
 | [Dynamic 3d gaussians: Tracking by persistent dynamic view synthesis](https://ieeexplore.ieee.org/abstract/document/10550869/) | 3DV 2024               | [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) | General Motion |
 | [Neural trajectory fields for dynamic novel view synthesis](https://arxiv.org/abs/2105.05994)                                  | arXiv 2021             |
 
 
-## Factorization
+### 📄 4.4.6 Factorization-Paper
 | **Paper**                                                                                                                                                                                                                                                                  | **Conference/Journal** | **Code**                                           | **Type**       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|----------------------------------------------------|----------------|
 | [4d gaussian splatting for real-time dynamic scene rendering](http://openaccess.thecvf.com/content/CVPR2024/html/Wu_4D_Gaussian_Splatting_for_Real-Time_Dynamic_Scene_Rendering_CVPR_2024_paper.html)                                                                      | CVPR 2024              | [Code](https://github.com/hustvl/4DGaussians)      | General Motion |
@@ -310,7 +304,7 @@ which combines multiple patterns.
 | [Fast High Dynamic Range Radiance Fields for Dynamic Scenes](https://arxiv.org/abs/2401.06052)                                                                                                                                                                             | 3DV 2024               | [Code](https://github.com/hustvl/HDR-HexPlane)     | General Motion |
 
 
-# Reconstructing with Hybrid Motion
+### 📄 4.4.7 Reconstructing with Hybrid Motion-Paper
 | **Paper**                                                                                                                                                                                                                                                              | **Conference/Journal** | **Code**                                            | **Type** |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------------------------------------|----------|
 | [OmniRe: Omni Urban Scene Recon struction](https://openreview.net/forum?id=9cwxZxJixB)                                                                                                                                                                                 | ICLR 2024              | [Code](https://github.com/ziyc/drivestudio)         | Urban    |
@@ -329,3 +323,27 @@ which combines multiple patterns.
 
 
 
+
+
+# 📚 5. Citation
+
+```
+
+@misc{fan2025advancesradiancefielddynamic,
+      title={Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field}, 
+      author={Jinlong Fan and Xuepu Zeng and Jing Zhang and Mingming Gong and Yuxiang Yang and Dacheng Tao},
+      year={2025},
+      eprint={2505.10049},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.10049}, 
+}
+
+```
+
+
+# 📭 6. Contact
+
+```
+jfan@hdu.edu.cn
+```
