@@ -24,7 +24,8 @@ More content and details can be found in our Survey Paper: [Advances in Radiance
     * [4.2 Reconstruction with Rigid Motion](#-42-reconstruction-with-rigid-motion)
     * [4.3 Reconstruction with Articulated Motion](#-43-reconstruction-with-articulated-motion)
     * [4.4 Reconstruction with Nor-rigid Motion](#-44-reconstruction-with-nor-rigid-motion)
-5. [Citation]()
+5. [Citation](#-5-citation)
+6. [Contact](#-6-contact)
 
 # 📌 1. Abstract
 Dynamic scene representation and reconstruction have undergone transformative advances in recent years, catalyzed by 
