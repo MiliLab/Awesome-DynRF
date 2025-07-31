@@ -243,7 +243,6 @@ which combines multiple patterns.
 
 
 ## 🤖 4.4 Reconstruction with Nor-rigid Motion
-
 ### 📄 4.4.1 4D Spacetime-Paper
 | **Paper**                                                                                                                                                                                                 | **Conference/Journal** | **Code**                                                    | **Type**       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------|----------------|
@@ -278,7 +277,6 @@ which combines multiple patterns.
 | [Common pets in 3d: Dynamic new-view synthesis of real-life deformable categories](http://openaccess.thecvf.com/content/CVPR2023/html/Sinha_Common_Pets_in_3D_Dynamic_New-View_Synthesis_of_Real-Life_Deformable_CVPR_2023_paper.html)         | CVPR 2023              | [Code](https://github.com/facebookresearch/cop3d)          | Animal         |
 | [Mononerf: Learning a generalizable dynamic radiance field from monocular videos](http://openaccess.thecvf.com/content/ICCV2023/html/Tian_MonoNeRF_Learning_a_Generalizable_Dynamic_Radiance_Field_from_Monocular_Videos_ICCV_2023_paper.html) | ICCV 2023              | [Code](https://github.com/tianfr/MonoNeRF)                 | General Motion |
 | [Dynpoint: Dynamic neural point for view synthesis](https://proceedings.neurips.cc/paper_files/paper/2023/hash/dbdc7a9779ce0278c6e43b62c7e97759-Abstract-Conference.html)                                                                      | CVPR 2023              | [code](https://github.com/kaichen-z/DynPoint)              | General Motion |
-
 
 
 ### 📝 4.4.4 Point Tracking-Perprint
