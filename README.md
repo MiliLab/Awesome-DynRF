@@ -242,7 +242,6 @@ which combines multiple patterns.
 | 2024     | ECCV                   | [Leia: Latent view-invariant embeddings for implicit 3d articulation](https://link.springer.com/chapter/10.1007/978-3-031-72640-8_12)                                                                                                    |                                               | Object   |
 | 2024     | CVPR                   | [Reacto: Reconstructing articulated objects from a single video](http://openaccess.thecvf.com/content/CVPR2024/html/Song_REACTO_Reconstructing_Articulated_Objects_from_a_Single_Video_CVPR_2024_paper.html)                             | [Code](https://github.com/ChaoyueSong/REACTO) | Object   |
 
-||
 ## 🤖 4.4 Reconstruction with Nor-rigid Motion
 ### 📄 4.4.1 4D Spacetime-Paper
 | **Year** | **Conference/Journal** | **Paper**                                                                                                                                                                                                 | **Code**                                                    | **Type**       |
@@ -266,7 +265,6 @@ which combines multiple patterns.
 | 2025     | ICLR                   | [MoDGS: Dynamic Gaussian Splatting from Causuallycaptured Monocular Videos](https://modgs.github.io/static/paper.pdf)                                                                                                                             | [Code](https://github.com/MobiusLqm/MoDGS)                  | General Motion |
 | 2022     | NeurIPS                | [Neural surface reconstruction of dynamic scenes with monocular rgbd camera](https://proceedings.neurips.cc/paper_files/paper/2022/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html)                                                | [Code](https://github.com/USTC3DV/NDR-code)                 | Object         |
 
-||
 ### 📄 4.4.3 Frame-to-Frame Flow Field-Paper
 | **Year** | **Conference/Journal** | **Paper**                                                                                                                                                                                                                                      | **Code**                                                   | **Type**       |
 |----------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|----------------|
@@ -278,9 +276,6 @@ which combines multiple patterns.
 | 2023     | CVPR                   | [Common pets in 3d: Dynamic new-view synthesis of real-life deformable categories](http://openaccess.thecvf.com/content/CVPR2023/html/Sinha_Common_Pets_in_3D_Dynamic_New-View_Synthesis_of_Real-Life_Deformable_CVPR_2023_paper.html)         | [Code](https://github.com/facebookresearch/cop3d)          | Animal         |
 | 2023     | ICCV                   | [Mononerf: Learning a generalizable dynamic radiance field from monocular videos](http://openaccess.thecvf.com/content/ICCV2023/html/Tian_MonoNeRF_Learning_a_Generalizable_Dynamic_Radiance_Field_from_Monocular_Videos_ICCV_2023_paper.html) | [Code](https://github.com/tianfr/MonoNeRF)                 | General Motion |
 | 2023     | CVPR                   | [Dynpoint: Dynamic neural point for view synthesis](https://proceedings.neurips.cc/paper_files/paper/2023/hash/dbdc7a9779ce0278c6e43b62c7e97759-Abstract-Conference.html)                                                                      | [code](https://github.com/kaichen-z/DynPoint)              | General Motion |
-
-
-||
 
 ### 📝 4.4.4 Point Tracking-Perprint
 | **Year** | **Conference/Journal** | **Paper**                                                                                     | **Code** | **Type** |
